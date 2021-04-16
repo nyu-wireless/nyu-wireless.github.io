@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "NYU-WIRELESS"
+title                    : " "
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "NYU WIRELESS"
-description              : "An amazing website."
+description              : ""
 url                      : "nyu-wireless.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -94,10 +94,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "NYU WIRELESS"
-  avatar           : "/assets/images/standard-thumbnail-cropped.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : ""
-  location         : "370 Jay St 9th fl, Brooklyn, NY 11201"
+  name             : " "
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : " "
+  location         : # " "
   email            :
   links:
     - label: "Email"
