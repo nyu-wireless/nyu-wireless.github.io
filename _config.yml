@@ -93,45 +93,48 @@ analytics:
 
 
 # Site Author
-author:
-  name             : " "
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : " "
-  location         : # " "
-  email            :
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+#author:
+#  name             : " "
+#  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+#  bio              : " "
+#  location         : # " "
+#  email            :
+#  links:
+#    - label: "Email"
+#      icon: "fas fa-fw fa-envelope-square"
+#      # url: "info@nyuwireless.com"
+#    - label: "Website"
+#      icon: "fas fa-fw fa-link"
+#      url: "https://wireless.engineering.nyu.edu/"
+#    - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#     url: "https://twitter.com/NYUWireless?s=20"
+#    - label: "Facebook"
+#      icon: "fab fa-fw fa-facebook-square"
+#      url: "https://www.facebook.com/NYU-Wireless-1667185993495785/?ref=page_internal"
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://github.com/nyu-wireless"
+#    - label: "Instagram"
+#      icon: "fab fa-fw fa-instagram"
+#      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
   links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://wireless.engineering.nyu.edu/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://twitter.com/NYUWireless?s=20"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://www.facebook.com/NYU-Wireless-1667185993495785/?ref=page_internal"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
+      url: "https://github.com/nyu-wireless"
+    - label: "Gitlab"
       icon: "fab fa-fw fa-gitlab"
       # url:
     - label: "Bitbucket"
