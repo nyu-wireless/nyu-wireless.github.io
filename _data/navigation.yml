@@ -1,16 +1,8 @@
 # main links
 main:
-  - title: "Team"
-    url: /team/
-  - title: "Contacts"
-    url: /contacts/
   - title: "About"
     url: /about/
-  #- title: "Sitemap"
-  #  url: /sitemap/
-
-docs:
-  - title: "Getting Started"
-    children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
+  - title: "Team"
+    url: /team/
+  - title: "Posts"
+    url: /posts/
