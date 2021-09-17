@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "About"
-    url: /about/
-  - title: "Team"
-    url: /team/
   - title: "Posts"
     url: /posts/
+  - title: "Team"
+    url: /team/
+  - title: "About"
+    url: /about/
 
 docs:
   - title: "Getting Started"
