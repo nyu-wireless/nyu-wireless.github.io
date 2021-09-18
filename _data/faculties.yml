@@ -1,15 +1,21 @@
-- name: Tommy Azzino
-  photo: tommy.jpeg
-  info: <i>Assistant Professor</i><br/> Tandon School of Engineering <br/>New York University
-  email: tommy.azzino@nyu.edu
-  github: https://github.com/tommyazz
-  researchgate:
-  scholar:
+- name: Sundeep Rangan
+  photo: sundeep.jpg
+  info: <i>Associate Director and Professor</i><br/> NYU Wireless <br/>New York University
+  email: srangan@nyu.edu
+  github: https://github.com/sdrangan
+  scholar: 
   cv:
   education1:
   education2:
   education3:
-  education4:
-  education5:
-  education6:
-  education7:
+
+#- name: Tommy Azzino
+#  photo: tommy.jpeg
+#  info: <i>Assistant Professor</i><br/> Tandon School of Engineering <br/>New York University
+#  email: tommy.azzino@nyu.edu
+#  github: https://github.com/tommyazz
+#  scholar:
+#  cv:
+#  education1:
+#  education2:
+#  education3:

@@ -3,10 +3,19 @@
   info: PhD Student
   email: tommy.azzino@nyu.edu
   linkedin: https://www.linkedin.com/in/tommyazz/
+  github: https://github.com/tommyazz
+  scholar:
+  cv: assets/cvs/tommycv_nopic.pdf
   # website: https://website.com
-  # github: https://github.com/tommyazz
   # researchgate:
-  # scholar:
-  # cv:
 
-
+- name: Tommy Azzino
+  photo: tommy.jpeg
+  info: PhD Student
+  email: tommy.azzino@nyu.edu
+  linkedin: https://www.linkedin.com/in/tommyazz/
+  github: https://github.com/tommyazz
+  scholar:
+  cv: assets/cvs/tommycv_nopic.pdf
+  # website: https://website.com
+  # researchgate:
