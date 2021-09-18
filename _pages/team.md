@@ -11,7 +11,7 @@ permalink: /team/
 <div class="jumbotron">
 <div class="row">
 <div class="col-sm-3">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/people/{{ member.photo }}" width="100%" align="right" style="max-width:300px; max-height:280px"/>
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/people/{{ member.photo }}" width="100%" align="right" style="max-width:250px; max-height:240px"/>
 </div>
 <div class="col-sm-9 col-xs-12">
   <h5 style="font-size:20px;">{{ member.name }}</h5>
