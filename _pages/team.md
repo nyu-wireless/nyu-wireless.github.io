@@ -11,7 +11,7 @@ permalink: /team/
 <div class="jumbotron">
 <div class="row">
 <div class="col-sm-3">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/people/{{ member.photo }}" width="100%" align="right" style="max-width:200px; max-height:180px"/>
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/people/{{ member.photo }}" width="100%" align="right" style="max-width:190px; max-height:180px"/>
 </div>
 <div class="col-sm-9 col-xs-12">
   <h5 style="font-size:16px;">{{ member.name }}</h5>
@@ -43,7 +43,7 @@ permalink: /team/
 <div class="row">
 
 <div class="col-sm-1 col-xs-12">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/people/{{ member.photo }}" width="100%" align="right" style="max-width:200px; max-height:180px"/>
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/people/{{ member.photo }}" width="100%" align="right" style="max-width:190px; max-height:180px"/>
 </div>
 <div class="col-sm-4 col-xs-12">
   <h5 style="font-size:16px;">{{ member.name }}</h5>
