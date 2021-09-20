@@ -1,6 +1,6 @@
 - name: Tommy Azzino
   photo: tommy.jpeg
-  info: PhD Student
+  info: Ph.D. Student
   email: tommy.azzino@nyu.edu
   linkedin: https://www.linkedin.com/in/tommyazz/
   github: https://github.com/tommyazz
@@ -9,13 +9,13 @@
   # website: https://website.com
   # researchgate:
 
-- name: Tommy Azzino
+- name: Panagiotis Skrimponis
   photo: tommy.jpeg
-  info: PhD Student
-  email: tommy.azzino@nyu.edu
-  linkedin: https://www.linkedin.com/in/tommyazz/
-  github: https://github.com/tommyazz
-  scholar:
-  cv: assets/cvs/tommycv_nopic.pdf
+  info: Ph.D. Candidate
+  email: ps3857@nyu.edu
+  linkedin: https://www.linkedin.com/in/panagiotis-skrimponis/
+  github: https://github.com/skrimpon
+  scholar: https://scholar.google.com/citations?user=vSPECt0AAAAJ&hl=en&authuser=1
+  cv: assets/cvs/ps_cv.pdf
   # website: https://website.com
-  # researchgate:
+  researchgate: https://www.researchgate.net/profile/Panagiotis-Skrimponis
