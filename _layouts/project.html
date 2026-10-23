@@ -4,12 +4,16 @@ layout: default
 {% comment %}
   Project page hosted on this site. Front matter: title, image, image_caption,
   faculty / students (name, optional url), keywords, publications (title,
-  authors, venue, url, optional image). The page body is the overview.
+  authors, venue, url, optional image), and optional award / award_url for
+  the sponsor badge above the title. A video (video, video_caption) replaces
+  the image beside the overview; figure / figure_caption adds a full-width
+  figure below it, for wide diagrams. The page body is the overview.
   The project's areas come from its entry in _data/projects.yml.
 {% endcomment %}
 {% assign entry = site.data.projects | where: "url", page.url | first %}
 <section class="page-hero">
   <div class="container">
+    {% if page.award %}{% if page.award_url %}<a class="eyebrow eyebrow-link" href="{{ page.award_url }}">{{ page.award }}</a>{% else %}<span class="eyebrow">{{ page.award }}</span>{% endif %}{% endif %}
     <div class="subnav">
       {% for slug in entry.areas %}{% assign area = site.data.areas | where: "slug", slug | first %}
       <a href="{{ area.url | relative_url }}">{{ area.title }}</a>
@@ -28,13 +32,25 @@ layout: default
 {{ content }}
         {% if page.keywords %}<div class="keywords">{% for k in page.keywords %}<span>{{ k }}</span>{% endfor %}</div>{% endif %}
       </div>
-      {% if page.image %}
+      {% if page.video %}
+      <figure class="figure-card">
+        <video src="{{ page.video | relative_url }}" autoplay muted loop playsinline></video>
+        {% if page.video_caption %}<figcaption>{{ page.video_caption }}</figcaption>{% endif %}
+      </figure>
+      {% elsif page.image %}
       <figure class="figure-card">
         <img src="{{ page.image | relative_url }}" alt="">
         {% if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}
       </figure>
       {% endif %}
     </div>
+
+    {% if page.figure %}
+    <figure class="figure-card project-figure">
+      <img src="{{ page.figure | relative_url }}" alt="">
+      {% if page.figure_caption %}<figcaption>{{ page.figure_caption }}</figcaption>{% endif %}
+    </figure>
+    {% endif %}
 
     {% if page.faculty or page.students %}
     <p class="section-label">Team</p>

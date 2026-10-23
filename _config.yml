@@ -52,6 +52,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/
+  - material/
 
 # ---------------------------------------------------------------------------
 # Collections: project pages hosted on this site (most projects link out)

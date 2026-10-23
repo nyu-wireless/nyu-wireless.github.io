@@ -67,6 +67,14 @@
   image: "/assets/images/projects/reliable-low-latency/banner.jpg"
   areas: [networking]
 
+- title: "Connected Wearables for People with Blindness and Low-Vision"
+  pis: ["JR Rizzo", "Yao Wang", "Sundeep Rangan", "Marco Mezzavilla"]
+  summary: "Wearables that offload spatial mapping and vision-language reasoning to the edge to guide people with vision loss."
+  url: "/projects/connected-wearables/"
+  image: "/assets/images/projects/connected-wearables.svg"
+  image_fit: contain
+  areas: [applications, networking, ai-ml, testbeds]
+
 - title: "ALMA Lab: Atoms, Light, and Microwaves"
   pis: ["Aziza Almanakly"]
   summary: "A quantum engineering lab building superconducting circuits for light-matter interaction, quantum links, and sensing."

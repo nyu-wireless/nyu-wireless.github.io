@@ -346,7 +346,8 @@ h3 { font-size: 19px; line-height: 1.3; margin: 0 0 8px; color: var(--ink); }
   margin: 0; background: #fff; border-radius: 18px; border: 1px solid var(--line); box-shadow: var(--shadow);
   padding: 24px 24px 18px;
 }
-.figure-card img { width: 100%; height: auto; }
+.figure-card img, .figure-card video { width: 100%; height: auto; display: block; }
+.prose .figure-card.project-figure { margin: 0 0 56px; }
 .figure-card figcaption { font-size: 14.5px; color: var(--muted); margin-top: 12px; text-align: center; }
 
 .thrusts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
