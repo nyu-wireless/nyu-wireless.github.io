@@ -6,6 +6,14 @@ intro: "The faculty, researchers and students of NYU WIRELESS."
 wide: true
 ---
 
-<div class="empty-state">
-  <p>The People page is coming soon.</p>
+## Leadership
+
+<div class="member-grid">
+  {% for p in site.data.people.leadership %}{% include person-card.html person=p %}{% endfor %}
+</div>
+
+## Faculty
+
+<div class="member-grid">
+  {% for p in site.data.people.faculty %}{% include person-card.html person=p %}{% endfor %}
 </div>
