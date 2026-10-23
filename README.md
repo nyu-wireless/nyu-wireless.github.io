@@ -5,6 +5,8 @@ Source for <https://nyu-wireless.github.io>, the research site of
 site built by GitHub Pages from the `master` branch, styled to match the NYU
 WIRELESS faculty group sites.
 
+**Faculty adding projects:** see [adding_projects.md](adding_projects.md).
+
 ## Local preview
 
 ```

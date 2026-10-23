@@ -64,7 +64,7 @@
   pis: ["Shivendra Panwar", "Fraida Fund", "Pei Liu"]
   summary: "Reliable, low-latency cellular links for XR, robots and haptics: multi-connectivity, mmWave mobility and congestion control."
   url: "/projects/reliable-low-latency/"
-  image: "/assets/images/projects/rbllc/banner.jpg"
+  image: "/assets/images/projects/reliable-low-latency/banner.jpg"
   areas: [networking]
 
 - title: "ALMA Lab: Atoms, Light, and Microwaves"
