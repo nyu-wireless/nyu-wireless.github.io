@@ -68,7 +68,8 @@ layout: default
 
 
     {% comment %}Optional `sections`: one full-width row per sub-project (title, text in
-    Markdown, image or video, caption), alternating image and text sides.{% endcomment %}
+    Markdown, image or video, caption, optional label shown above the title),
+    alternating image and text sides.{% endcomment %}
     {% if page.sections %}
     <div class="vectors project-sections" style="margin-bottom: 56px">
       {% for sec in page.sections %}
@@ -81,7 +82,7 @@ layout: default
         <a class="vector-media" href="{{ sec.image | relative_url }}"><img src="{{ sec.image | relative_url }}" alt="{{ sec.caption | strip_html | escape }}" loading="lazy"></a>
         {% endif %}
         <div class="vector-text">
-          <span class="thrust-num">{{ sec.label | default: forloop.index }}</span>
+          {% if sec.label %}<span class="thrust-num">{{ sec.label }}</span>{% endif %}
           <h3>{{ sec.title }}</h3>
           {{ sec.text | markdownify }}
           {% if sec.caption %}<p class="credit">{{ sec.caption }}</p>{% endif %}
