@@ -75,6 +75,29 @@
   image_fit: contain
   areas: [applications, networking, ai-ml, testbeds]
 
+- title: "RAISE Lab: Research in Advanced Integrated Systems and Electronics"
+  pis: ["Hamed Rahmani"]
+  summary: "Low-power integrated circuits, antennas and electromagnetics for bioelectronics, mmWave/sub-THz links, smart surfaces and IoT."
+  url: "https://wp.nyu.edu/rahmani/"
+  image: "/assets/images/projects/raise-lab.jpg"
+  areas: [circuits]
+
+- title: "NeuroTap: Chip-Scale Neural Recording with Wireless Communication and Powering"
+  pis: ["Hamed Rahmani"]
+  summary: "Batteryless neural implants that scale to thousands of channels, with near-field wireless power and high-rate links."
+  url: "/projects/neurotap/"
+  image: "/assets/images/projects/neurotap/metasurface-wpt.png"
+  image_fit: contain
+  areas: [circuits]
+
+- title: "Resilient Sub-THz Networks using Near-Field Wavefronts"
+  pis: ["Hamed Rahmani"]
+  summary: "Programmable arrays that shape near-field wavefronts to route sub-THz links around blockage for mobile users."
+  url: "/projects/near-field-wavefronts/"
+  image: "/assets/images/projects/near-field-wavefronts/blockage.png"
+  image_fit: contain
+  areas: [circuits]
+
 - title: "ALMA Lab: Atoms, Light, and Microwaves"
   pis: ["Aziza Almanakly"]
   summary: "A quantum engineering lab building superconducting circuits for light-matter interaction, quantum links, and sensing."

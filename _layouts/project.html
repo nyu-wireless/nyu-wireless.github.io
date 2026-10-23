@@ -7,7 +7,8 @@ layout: default
   authors, venue, url, optional image), and optional award / award_url for
   the sponsor badge above the title. A video (video, video_caption) replaces
   the image beside the overview; figure / figure_caption adds a full-width
-  figure below it, for wide diagrams. The page body is the overview.
+  figure below it, for wide diagrams, and figures (src, caption, optional
+  width in px for small images) adds several. The page body is the overview.
   The project's areas come from its entry in _data/projects.yml.
 {% endcomment %}
 {% assign entry = site.data.projects | where: "url", page.url | first %}
@@ -51,6 +52,12 @@ layout: default
       {% if page.figure_caption %}<figcaption>{{ page.figure_caption }}</figcaption>{% endif %}
     </figure>
     {% endif %}
+    {% for fig in page.figures %}
+    <figure class="figure-card project-figure">
+      <img src="{{ fig.src | relative_url }}" alt=""{% if fig.width %} style="max-width: {{ fig.width }}px; margin: 0 auto"{% endif %}>
+      {% if fig.caption %}<figcaption>{{ fig.caption }}</figcaption>{% endif %}
+    </figure>
+    {% endfor %}
 
     {% if page.faculty or page.students %}
     <p class="section-label">Team</p>
