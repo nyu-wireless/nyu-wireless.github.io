@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{% assign area = site.data.areas | where: "slug", page.area | first %}
+<section class="page-hero">
+  <div class="container">
+    <a class="eyebrow eyebrow-link" href="{{ '/#areas' | relative_url }}">&larr; Research areas</a>
+    <h1>{{ area.title }}</h1>
+    <p>{{ area.summary }}</p>
+  </div>
+</section>
+
+<section class="page-body">
+  <div class="container prose">
+{{ content }}
+    {% assign projects = site.data.projects | where_exp: "p", "p.areas contains page.area" %}
+    <p class="section-label">{{ projects.size }} projects</p>
+    <div class="project-list">
+      {% for p in projects %}
+        {% include project-row.html project=p %}
+      {% endfor %}
+    </div>
+    {% if area.legacy_url %}
+    <p class="note area-legacy">We are moving this area's projects to this site. Other projects in {{ area.title }} are listed on the <a href="{{ area.legacy_url }}">NYU WIRELESS website</a>.</p>
+    {% endif %}
+  </div>
+</section>

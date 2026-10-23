@@ -1,0 +1,67 @@
+---
+layout: default
+---
+{% comment %}
+  Project page hosted on this site. Front matter: title, image, image_caption,
+  faculty / students (name, optional url), keywords, publications (title,
+  authors, venue, url, optional image). The page body is the overview.
+  The project's areas come from its entry in _data/projects.yml.
+{% endcomment %}
+{% assign entry = site.data.projects | where: "url", page.url | first %}
+<section class="page-hero">
+  <div class="container">
+    <div class="subnav">
+      {% for slug in entry.areas %}{% assign area = site.data.areas | where: "slug", slug | first %}
+      <a href="{{ area.url | relative_url }}">{{ area.title }}</a>
+      {% endfor %}
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.faculty %}<p class="hero-meta">{% for f in page.faculty %}{{ f.name }}{% unless forloop.last %} &middot; {% endunless %}{% endfor %}</p>{% endif %}
+  </div>
+</section>
+
+<section class="page-body">
+  <div class="container prose">
+    <div class="two-col project-intro">
+      <div>
+        <p class="section-label">Overview</p>
+{{ content }}
+        {% if page.keywords %}<div class="keywords">{% for k in page.keywords %}<span>{{ k }}</span>{% endfor %}</div>{% endif %}
+      </div>
+      {% if page.image %}
+      <figure class="figure-card">
+        <img src="{{ page.image | relative_url }}" alt="">
+        {% if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}
+      </figure>
+      {% endif %}
+    </div>
+
+    {% if page.faculty or page.students %}
+    <p class="section-label">Team</p>
+    <div class="team-groups">
+      {% if page.faculty %}
+      <div><h3>Faculty</h3><p class="name-list">{% for f in page.faculty %}{% if f.url %}<a href="{{ f.url }}">{{ f.name }}</a>{% else %}<span>{{ f.name }}</span>{% endif %}{% endfor %}</p></div>
+      {% endif %}
+      {% if page.students %}
+      <div><h3>Students</h3><p class="name-list">{% for s in page.students %}{% if s.url %}<a href="{{ s.url }}">{{ s.name }}</a>{% else %}<span>{{ s.name }}</span>{% endif %}{% endfor %}</p></div>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    {% if page.publications %}
+    <p class="section-label section-gap">Selected publications</p>
+    <div class="project-list">
+      {% for pub in page.publications %}
+      <a class="project-row" href="{{ pub.url }}">
+        {% if pub.image %}<img class="project-row-thumb project-row-thumb-contain" src="{{ pub.image | relative_url }}" alt="">{% endif %}
+        <span class="project-row-body">
+          <span class="project-row-title">{{ pub.title }}</span>
+          <span class="project-row-summary">{{ pub.authors }}</span>
+          <span class="project-row-pis">{{ pub.venue }}</span>
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,97 @@
+# Projects shown on the research-area pages, in display order.
+#   areas:     slugs from _data/areas.yml; a project appears on every area it lists.
+#   pis:       NYU WIRELESS faculty on the project.
+#   summary:   one sentence, at most ~120 characters, so rows stay even.
+#   url:       the project's own page (usually on the PI's group site), or
+#              /projects/<name>/ for a page hosted here in _projects/<name>.md.
+#   image:     thumbnail; image_fit: contain for diagrams that must not be cropped,
+#              image_position (CSS object-position, e.g. "center 70%") to move the crop.
+
+- title: "SALSA: Spectrally Agile Large-Scale Arrays"
+  pis: ["Sundeep Rangan", "Hamed Rahmani"]
+  summary: "Wideband, frequency-agile RFICs and tileable massive MIMO radios for the upper mid-band (FR3)."
+  url: "https://sdrangan.github.io/research/spectrally-agile-arrays/"
+  image: "/assets/images/projects/salsa.svg"
+  image_fit: contain
+  areas: [wireless, networking, circuits, testbeds]
+
+- title: "FALCON: Flexible Aerial Links for Control, Observation, and Navigation"
+  pis: ["Sundeep Rangan", "Yong Liu"]
+  summary: "Resilient FR3 links for aerial robots, from agile transceivers to multipath transport, flight-tested on NSF AERPAW."
+  url: "https://sdrangan.github.io/falcon/"
+  image: "/assets/images/projects/falcon.svg"
+  image_fit: contain
+  areas: [wireless, networking, applications, testbeds]
+
+- title: "Hardware-Algorithm Co-Design"
+  pis: ["Sundeep Rangan", "Elza Erkip", "Hamed Rahmani", "Brandon Reagen"]
+  summary: "Energy-efficient wireless networks built from low-power, approximate, non-linear, and noisy components."
+  url: "https://sdrangan.github.io/research/hardware-co-design/"
+  image: "/assets/images/projects/hardware-co-design.png"
+  image_fit: contain
+  areas: [circuits, ai-ml]
+
+- title: "Satellite-Terrestrial Co-Existence"
+  pis: ["Sundeep Rangan"]
+  summary: "Detection, interference nulling, and anti-jamming for shared satellite and terrestrial use of the upper mid-band."
+  url: "https://sdrangan.github.io/research/satellite-terrestrial-coexistence/"
+  image: "/assets/images/projects/satellite.jpg"
+  areas: [wireless, applications]
+
+- title: "Wireless-Aided Robotic Navigation"
+  pis: ["Sundeep Rangan"]
+  summary: "Robots that localize radio sources and navigate with wireless signals, demonstrated on a 10-GHz robotic testbed."
+  url: "https://sdrangan.github.io/research/wireless-robotic-navigation/"
+  image: "/assets/images/projects/robotic-navigation.jpg"
+  areas: [wireless, ai-ml, applications, testbeds]
+
+- title: "FR3 Prototyping, Channel Measurements & Sensing"
+  pis: ["Sundeep Rangan"]
+  summary: "Hardware prototyping, channel measurement campaigns, and integrated sensing in the upper mid-band (FR3)."
+  url: "https://sdrangan.github.io/research/fr3-prototyping/"
+  image: "/assets/images/projects/fr3-prototyping.jpg"
+  areas: [wireless, testbeds]
+
+- title: "WaveFlow: Agentic Algorithm-Hardware Co-Design"
+  pis: ["Sundeep Rangan"]
+  summary: "A Python-based, agentic framework for automated algorithm-hardware co-design of wireless systems."
+  url: "https://sdrangan.github.io/waveflow/docs/"
+  image: "/assets/images/projects/waveflow.svg"
+  image_fit: contain
+  areas: [circuits, ai-ml]
+
+- title: "Reliable Broadband Low-Latency Communications"
+  pis: ["Shivendra Panwar", "Fraida Fund", "Pei Liu"]
+  summary: "Reliable, low-latency cellular links for XR, robots and haptics: multi-connectivity, mmWave mobility and congestion control."
+  url: "/projects/reliable-low-latency/"
+  image: "/assets/images/projects/rbllc/banner.jpg"
+  areas: [networking]
+
+- title: "ALMA Lab: Atoms, Light, and Microwaves"
+  pis: ["Aziza Almanakly"]
+  summary: "A quantum engineering lab building superconducting circuits for light-matter interaction, quantum links, and sensing."
+  url: "https://alma.engineering.nyu.edu/"
+  image: "/assets/images/projects/alma-lab.jpg"
+  areas: [circuits]
+
+- title: "Microwave Quantum Optics"
+  pis: ["Aziza Almanakly"]
+  summary: "Superconducting qubits as microwave photon emitters: generating, routing, and measuring quantum states of light."
+  url: "https://alma.engineering.nyu.edu/research/#microwave-quantum-optics"
+  image: "/assets/images/projects/alma-quantum-optics.jpg"
+  areas: [circuits]
+
+- title: "Superconducting Quantum Interconnects"
+  pis: ["Aziza Almanakly"]
+  summary: "Coherent microwave links that share quantum information and entanglement between distant quantum processors."
+  url: "https://alma.engineering.nyu.edu/research/#superconducting-quantum-interconnects"
+  image: "/assets/images/projects/alma-interconnects.jpg"
+  areas: [circuits]
+
+- title: "Quantum Sensing"
+  pis: ["Aziza Almanakly"]
+  summary: "Superconducting circuits and entangled sensor networks for detecting weak signals beyond classical precision limits."
+  url: "https://alma.engineering.nyu.edu/research/#quantum-sensing"
+  image: "/assets/images/projects/alma-sensing.jpg"
+  image_position: "center 68%"
+  areas: [circuits]

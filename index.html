@@ -1,4 +1,30 @@
 ---
-layout: single
-author_profile: false
+layout: default
+permalink: /
 ---
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">NYU Tandon School of Engineering</span>
+    <h1>NYU WIRELESS Research</h1>
+    <p class="tagline">Next-generation wireless, from theory and circuits to testbeds and applications</p>
+    <p class="lede">NYU WIRELESS is an academic-industry research center at the NYU Tandon School of Engineering. Our faculty and students helped pioneer the millimeter-wave research behind 5G, and today work across the upper mid-band, sub-THz, AI-native networks, and the circuits, testbeds and applications that bring them to life.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="#areas">Research areas</a>
+      <a class="btn btn-ghost" href="{{ '/people/' | relative_url }}">People</a>
+      <a class="btn btn-ghost" href="{{ site.contact.nyu_wireless }}">NYU WIRELESS home &#8599;</a>
+    </div>
+  </div>
+</section>
+
+<!-- Research-area tiles, overlapping the hero -->
+<div class="container overlap" id="areas">
+  <div class="overlap-head">
+    <p class="section-label">Research areas</p>
+  </div>
+  <div class="project-grid">
+    {% for a in site.data.areas %}
+      {% include area-card.html area=a %}
+    {% endfor %}
+  </div>
+</div>

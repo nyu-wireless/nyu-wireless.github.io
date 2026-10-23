@@ -1,0 +1,14 @@
+{% assign p = include.project %}
+{% assign external = false %}{% if p.url contains '://' %}{% assign external = true %}{% endif %}
+<a class="project-row" href="{% if external %}{{ p.url }}{% else %}{{ p.url | relative_url }}{% endif %}">
+  {% if p.image and p.image != '' %}
+  <img class="project-row-thumb{% if p.image_fit == 'contain' %} project-row-thumb-contain{% endif %}" src="{{ p.image | relative_url }}"{% if p.image_position %} style="object-position: {{ p.image_position }}"{% endif %} alt="">
+  {% else %}
+  <span class="project-row-thumb project-thumb-blank" aria-hidden="true"></span>
+  {% endif %}
+  <span class="project-row-body">
+    <span class="project-row-title">{{ p.title }}</span>
+    {% if p.pis %}<span class="project-row-pis">{{ p.pis | join: ", " }}</span>{% endif %}
+    <span class="project-row-summary">{{ p.summary }}</span>
+  </span>
+</a>

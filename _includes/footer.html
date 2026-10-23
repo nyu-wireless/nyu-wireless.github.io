@@ -1,21 +1,28 @@
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-
-    {% if site.footer.links %}
-      {% for link in site.footer.links %}
-        {% if link.label and link.url %}
-          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        {% if site.branding.logo_white and site.branding.logo_white != '' %}
+        <img class="footer-logo" src="{{ site.branding.logo_white | relative_url }}" alt="NYU">
         {% endif %}
-      {% endfor %}
-    {% endif %}
-
-    {% unless site.atom_feed.hide %}
-      <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-    {% endunless %}
-  </ul>
-</div>
-
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+        <h4>{{ site.title }}</h4>
+        <p>{{ site.branding.footer_blurb }}</p>
+        <p><a href="{{ site.contact.nyu_wireless }}">NYU WIRELESS</a> &middot; <a href="https://engineering.nyu.edu/">NYU Tandon</a></p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>{{ site.contact.address }}</p>
+        <p><a href="{{ site.contact.nyu_wireless }}">wireless.engineering.nyu.edu</a></p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          {% for item in site.data.navigation.main %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; {{ 'now' | date: '%Y' }} {{ site.title }} &middot; New York University</div>
+  </div>
+</footer>

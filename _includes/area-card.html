@@ -1,0 +1,20 @@
+{% assign a = include.area %}
+{% assign external = false %}{% if a.url contains '://' %}{% assign external = true %}{% endif %}
+<a class="project-card" href="{% if external %}{{ a.url }}{% else %}{{ a.url | relative_url }}{% endif %}">
+  {% if a.image and a.image != '' %}
+  <img class="project-thumb" src="{{ a.image | relative_url }}" alt="">
+  {% else %}
+  <div class="project-thumb project-thumb-blank area-icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{{ a.icon }}</svg>
+  </div>
+  {% endif %}
+  <div class="project-body">
+    <h3>{{ a.title }}</h3>
+    <p>{{ a.summary }}</p>
+    {% if external %}
+    <span class="more">Current projects &#8599;</span>
+    {% else %}
+    <span class="more">View projects &rarr;</span>
+    {% endif %}
+  </div>
+</a>

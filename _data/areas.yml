@@ -1,0 +1,68 @@
+# The six research-area tiles on the home page, in display order.
+#   slug:       used in _data/projects.yml (`areas:`) to tag projects with this area.
+#   url:        the area's page on this site (_pages/research/<slug>.md).
+#   legacy_url: the area's topic page on wireless.engineering.nyu.edu, linked
+#               from the area page for projects not yet moved here.
+#   image:      thumbnail. When blank, the tile shows the violet banner with
+#               `icon` instead (inner markup of a 24x24 stroke SVG).
+
+- title: "Wireless Communications & Sensing"
+  slug: wireless
+  summary: >-
+    Propagation measurements, channel modeling and system design from the upper
+    mid-band (7–24 GHz) to sub-THz, along with integrated sensing and communication.
+  url: /research/wireless/
+  legacy_url: "https://wireless.engineering.nyu.edu/wireless-communications-and-sensing-topic-page"
+  image: "/assets/images/areas/comms-sensing.jpg"
+  icon: '<circle cx="12" cy="10" r="2"/><path d="M12 12v9M8.5 6.5a5 5 0 0 0 0 7M15.5 6.5a5 5 0 0 1 0 7M5.6 3.6a9 9 0 0 0 0 12.8M18.4 3.6a9 9 0 0 1 0 12.8"/>'
+
+- title: "Networking, Edge Computing & Security"
+  slug: networking
+  summary: >-
+    Disaggregated and software-defined networks, mobile edge computing, and the
+    resilience and security of critical wireless infrastructure.
+  url: /research/networking/
+  legacy_url: "https://wireless.engineering.nyu.edu/networking-edge-computing-and-security-topic-page"
+  image: "/assets/images/areas/networking.jpg"
+  icon: '<circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v5M12 12l-5.6 5.6M12 12l5.6 5.6"/>'
+
+- title: "Circuits & Devices"
+  slug: circuits
+  summary: >-
+    RF, digital and quantum circuits: transceivers above 100 GHz, agile upper
+    mid-band front ends, and superconducting devices for quantum
+    communication and sensing.
+  url: /research/circuits/
+  legacy_url: "https://wireless.engineering.nyu.edu/circuits-and-devices-topic-page"
+  image: "/assets/images/areas/circuits.jpg"
+  icon: '<rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/>'
+
+- title: "Applications"
+  slug: applications
+  summary: >-
+    Connected robots, UAVs, wearables, immersive video and intelligent
+    transportation, built with application experts across NYU.
+  url: /research/applications/
+  legacy_url: "https://wireless.engineering.nyu.edu/applications-topic-page"
+  image: "/assets/images/areas/applications.jpg"
+  icon: '<rect x="9" y="9" width="6" height="6" rx="1"/><circle cx="5" cy="5" r="2.5"/><circle cx="19" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M7 7l2 2M17 7l-2 2M7 17l2-2M17 17l-2-2"/>'
+
+- title: "AI/ML in Wireless"
+  slug: ai-ml
+  summary: >-
+    AI for wireless and wireless for AI: learned channel models, beamforming
+    and compression, and connected AI services at the edge.
+  url: /research/ai-ml/
+  legacy_url: "https://wireless.engineering.nyu.edu/ai-ml-in-wireless-topic-page"
+  image: "/assets/images/areas/ai-ml.jpg"
+  icon: '<path d="M11 3l1.8 4.7 4.7 1.8-4.7 1.8L11 16l-1.8-4.7-4.7-1.8 4.7-1.8z"/><path d="M18 14l.8 2.2 2.2.8-2.2.8L18 20l-.8-2.2-2.2-.8 2.2-.8z"/>'
+
+- title: "Testbeds & Prototypes"
+  slug: testbeds
+  summary: >-
+    Software-defined radios and arrays at 140 GHz and in the upper mid-band,
+    the COSMOS city-scale testbed, and the NSF-funded THz measurement lab.
+  url: /research/testbeds/
+  legacy_url: "https://wireless.engineering.nyu.edu/testbeds-and-prototypes"
+  image: "/assets/images/areas/testbeds.jpg"
+  icon: '<path d="M9 3h6M10 3v6l-5.5 9.5A1.5 1.5 0 0 0 5.8 21h12.4a1.5 1.5 0 0 0 1.3-2.5L14 9V3M7 15h10"/>'
