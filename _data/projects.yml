@@ -126,3 +126,48 @@
   image: "/assets/images/projects/alma-sensing.jpg"
   image_position: "center 68%"
   areas: [circuits]
+
+# ---- Rappaport group (Theodore S. Rappaport) ----
+- title: "Mid-Band Radio Propagation Measurements at 3.7, 6.75 and 16.95 GHz"
+  pis: ["Theodore (Ted) Rappaport"]
+  summary: "Measured 6G mid-band channels at 3.7, 6.75 and 16.95 GHz: path loss, spreads, penetration loss and point data."
+  url: "/projects/radio-propagation/"
+  image: "/assets/images/projects/radio-propagation/banner.jpg"
+  areas: [wireless, testbeds]
+
+- title: "NYUSIM: Measurement-Based Channel Simulation for 6G and AI"
+  pis: ["Theodore (Ted) Rappaport"]
+  summary: "Open-source channel simulator built on NYU WIRELESS measurements, covering 0.5–150 GHz and ported to Python for AI."
+  url: "/projects/nyusim/"
+  image: "/assets/images/projects/nyusim/banner.jpg"
+  image_position: "left center"
+  areas: [wireless, ai-ml]
+
+- title: "NYURay: A 3D Wireless Ray Tracer for Site-Specific Channel Prediction"
+  pis: ["Theodore (Ted) Rappaport"]
+  summary: "Calibrated 3D ray tracing for site-specific channel prediction, with 3D models built automatically from phone video."
+  url: "/projects/nyuray/"
+  image: "/assets/images/projects/nyuray/banner.jpg"
+  areas: [wireless, ai-ml, applications]
+
+- title: "Precision Timing in Channel Sounders and Distributed Systems"
+  pis: ["Theodore (Ted) Rappaport"]
+  summary: "Sub-nanosecond timing between untethered radios using rubidium clocks, PTP over Wi-Fi, and automatic drift correction."
+  url: "/projects/precision-timing/"
+  image: "/assets/images/projects/precision-timing/banner.jpg"
+  image_position: "30% center"
+  areas: [testbeds, wireless]
+
+- title: "Waste Factor: A New Metric for Evaluating Power Efficiency in Any Cascade"
+  pis: ["Theodore (Ted) Rappaport"]
+  summary: "Defines the Waste Factor, a Friis-style metric for power wasted along any cascade, from circuits to networks."
+  url: "/projects/waste-factor/"
+  image: "/assets/images/projects/waste-factor/banner.jpg"
+  areas: [wireless, circuits, networking]
+
+- title: "THz Measurement Facility (THz Lab)"
+  pis: ["Theodore (Ted) Rappaport", "Davood Shahrjerdi", "Michael Knox", "Hamed Rahmani"]
+  summary: "A multiuser lab for measuring devices, circuits, materials, and radio channels from DC to 500 GHz."
+  url: "/projects/thz-lab/"
+  image: "/assets/images/projects/thz-lab/banner.jpg"
+  areas: [circuits, testbeds, wireless]

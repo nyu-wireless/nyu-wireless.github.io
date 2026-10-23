@@ -162,6 +162,7 @@ Field reference:
 | `students` | optional | Current students and postdocs, same format. Leave out `url` if there is no individual page. |
 | `keywords` | optional | 3 to 6 short topic tags. |
 | `publications` | optional | 3 to 8 representative papers, newest first. `authors` in "F. Last" form; `venue` as "Journal or conference, year"; `url` to the DOI, IEEE Xplore or arXiv page; `image` optional. |
+| `sections` | optional | One full-width row per sub-project or topic: `title`, `text` (Markdown), one of `image`, `video` or `youtube` (a YouTube video ID), and an optional `caption`. Add `label` (for example `"Research area 1"` or `"Thrust 2"`) to show a small heading above the title; without it, no label is shown. |
 
 The page body (below the second `---`) is the overview, written in Markdown.
 **Keep it short: two paragraphs, about 120 to 200 words.** The page is a

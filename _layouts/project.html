@@ -6,7 +6,9 @@ layout: default
   faculty / students (name, optional url), keywords, publications (title,
   authors, venue, url, optional image), and optional award / award_url for
   the sponsor badge above the title. A video (video, video_caption) replaces
-  the image beside the overview; figure / figure_caption adds a full-width
+  the image beside the overview; youtube / youtube_caption embeds a YouTube video there instead;
+  sections (title, text, image, video or youtube id, caption) adds
+  full-width sub-project rows; figure / figure_caption adds a full-width
   figure below it, for wide diagrams, and figures (src, caption, optional
   width in px for small images) adds several. The page body is the overview.
   The project's areas come from its entry in _data/projects.yml.
@@ -38,6 +40,11 @@ layout: default
         <video src="{{ page.video | relative_url }}" autoplay muted loop playsinline></video>
         {% if page.video_caption %}<figcaption>{{ page.video_caption }}</figcaption>{% endif %}
       </figure>
+      {% elsif page.youtube %}
+      <figure class="figure-card">
+        <div class="video-embed-frame" style="aspect-ratio: 16 / 9"><iframe src="https://www.youtube-nocookie.com/embed/{{ page.youtube }}" title="{{ page.youtube_caption | strip_html | escape }}" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+        {% if page.youtube_caption %}<figcaption>{{ page.youtube_caption }}</figcaption>{% endif %}
+      </figure>
       {% elsif page.image %}
       <figure class="figure-card">
         <img src="{{ page.image | relative_url }}" alt="">
@@ -58,6 +65,32 @@ layout: default
       {% if fig.caption %}<figcaption>{{ fig.caption }}</figcaption>{% endif %}
     </figure>
     {% endfor %}
+
+
+    {% comment %}Optional `sections`: one full-width row per sub-project (title, text in
+    Markdown, image or video, caption, optional label shown above the title),
+    alternating image and text sides.{% endcomment %}
+    {% if page.sections %}
+    <div class="vectors project-sections" style="margin-bottom: 56px">
+      {% for sec in page.sections %}
+      <article class="vector">
+        {% if sec.youtube %}
+        <div class="vector-media" style="display:block"><div class="video-embed-frame" style="aspect-ratio: 16 / 9"><iframe src="https://www.youtube-nocookie.com/embed/{{ sec.youtube }}" title="{{ sec.title | escape }}" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></div>
+        {% elsif sec.video %}
+        <div class="vector-media"><video src="{{ sec.video | relative_url }}"{% if sec.poster %} poster="{{ sec.poster | relative_url }}"{% endif %} controls muted playsinline preload="metadata" style="width:100%;border-radius:8px"></video></div>
+        {% elsif sec.image %}
+        <a class="vector-media" href="{{ sec.image | relative_url }}"><img src="{{ sec.image | relative_url }}" alt="{{ sec.caption | strip_html | escape }}" loading="lazy"></a>
+        {% endif %}
+        <div class="vector-text">
+          {% if sec.label %}<span class="thrust-num">{{ sec.label }}</span>{% endif %}
+          <h3>{{ sec.title }}</h3>
+          {{ sec.text | markdownify }}
+          {% if sec.caption %}<p class="credit">{{ sec.caption }}</p>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% endif %}
 
     {% if page.faculty or page.students %}
     <p class="section-label">Team</p>
