@@ -6,3 +6,5 @@ main:
     url: /research/
   - title: "People"
     url: /people/
+  - title: "Events"
+    url: /events/
