@@ -562,7 +562,30 @@ h3 { font-size: 19px; line-height: 1.3; margin: 0 0 8px; color: var(--ink); }
   .page-body { padding: 40px 0 56px; }
 }
 
-/* ---------- Research-area tiles (home) ---------- */
+/* ---------- Affiliate logos (home) ---------- */
+.affiliate-card {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 36px 32px 28px;
+}
+.affiliate-grid {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 36px 28px; align-items: center;
+}
+@media (max-width: 960px) { .affiliate-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 560px) { .affiliate-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 20px; } }
+.affiliate-grid a { display: grid; place-items: center; height: 72px; transition: transform .15s; }
+.affiliate-grid a:hover { transform: translateY(-2px); }
+.affiliate-grid img { max-height: 72px; max-width: 100%; width: auto; height: auto; object-fit: contain; }
+.section-label.funding-label { margin: 40px 0 18px; }
+.affiliate-grid.funding-grid { grid-template-columns: repeat(3, 1fr); max-width: 640px; margin: 0 auto; }
+.funding-grid a { height: 88px; }
+.funding-grid img { max-height: 88px; }
+.affiliate-note {
+  margin: 32px 0 0; padding-top: 20px; border-top: 1px solid var(--line);
+  color: var(--ink-soft); font-size: 15px; text-align: center;
+}
+
+/* ---------- Research-area tiles ---------- */
 .overlap { margin-bottom: 80px; }
 .area-icon { display: grid; place-items: center; }
 .area-icon svg { width: 76px; height: 76px; opacity: .92; }

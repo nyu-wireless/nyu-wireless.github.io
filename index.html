@@ -6,25 +6,37 @@ permalink: /
 <section class="hero">
   <div class="container">
     <span class="eyebrow">NYU Tandon School of Engineering</span>
-    <h1>NYU WIRELESS Research</h1>
-    <p class="tagline">Next-generation wireless, from theory and circuits to testbeds and applications</p>
-    <p class="lede">NYU WIRELESS is an academic-industry research center at the NYU Tandon School of Engineering. Our faculty and students helped pioneer the millimeter-wave research behind 5G, and today work across the upper mid-band, sub-THz, AI-native networks, and the circuits, testbeds and applications that bring them to life.</p>
+    <h1>NYU WIRELESS</h1>
+    <p class="tagline">Next-generation wireless research, in partnership with industry</p>
+    <p class="lede">NYU WIRELESS brings together academic researchers with industrial affiliates who are among the leading companies in the wireless space. Our faculty and students span the entire stack, from circuits and antennas to networks and AI, and take on the open problems that will shape the next generation of wireless systems. Working with our affiliate members, the center did early, influential work on millimeter-wave communication for 5G. Today our research explores the technologies of future systems, including the upper mid-band, satellite networks, sub-THz, AI-native networks, wireless sensing and quantum, supported by testbeds and real-world applications. Together with our affiliates, we aim to bring these technologies to life and turn new ideas into the next generation of connectivity.</p>
     <div class="btn-row">
-      <a class="btn btn-primary" href="#areas">Research areas</a>
+      <a class="btn btn-primary" href="{{ '/research/' | relative_url }}">Our research</a>
       <a class="btn btn-ghost" href="{{ '/people/' | relative_url }}">People</a>
       <a class="btn btn-ghost" href="{{ site.contact.nyu_wireless }}">NYU WIRELESS home &#8599;</a>
     </div>
   </div>
 </section>
 
-<!-- Research-area tiles, overlapping the hero -->
-<div class="container overlap" id="areas">
+<!-- Affiliate logos, overlapping the hero -->
+<div class="container overlap" id="affiliates">
   <div class="overlap-head">
-    <p class="section-label">Research areas</p>
+    <p class="section-label">Our industrial affiliates</p>
   </div>
-  <div class="project-grid">
-    {% for a in site.data.areas %}
-      {% include area-card.html area=a %}
-    {% endfor %}
+  <div class="affiliate-card">
+    <ul class="affiliate-grid">
+      {% for a in site.data.affiliates %}
+      <li><a href="{{ a.url }}" title="{{ a.name }}"><img src="{{ a.logo | relative_url }}" alt="{{ a.name }}"></a></li>
+      {% endfor %}
+    </ul>
+    <p class="affiliate-note">Our affiliates support the center's infrastructure, student internships and fellowships, and work directly with our faculty and students on research.</p>
+  </div>
+
+  <p class="section-label funding-label">Funding</p>
+  <div class="affiliate-card">
+    <ul class="affiliate-grid funding-grid">
+      {% for f in site.data.funding %}
+      <li><a href="{{ f.url }}" title="{{ f.name }}"><img src="{{ f.logo | relative_url }}" alt="{{ f.name }}"></a></li>
+      {% endfor %}
+    </ul>
   </div>
 </div>

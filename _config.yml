@@ -2,10 +2,11 @@
 # Site settings
 # ---------------------------------------------------------------------------
 title: "NYU WIRELESS"
-tagline: "Research"  # used in the home page browser-tab title
+tagline: "NYU Tandon"  # used in the home page browser-tab title
 description: >-
-  Research at NYU WIRELESS, the academic-industry research center at the NYU
-  Tandon School of Engineering working on next-generation wireless systems.
+  NYU WIRELESS is an academic-industry research center at the NYU Tandon
+  School of Engineering, working with its industrial affiliates on
+  next-generation wireless systems.
 url: "https://nyu-wireless.github.io"
 repository: "nyu-wireless/nyu-wireless.github.io"
 
@@ -13,7 +14,7 @@ repository: "nyu-wireless/nyu-wireless.github.io"
 # Branding (header, footer)
 # ---------------------------------------------------------------------------
 branding:
-  tagline: "Research · NYU Tandon"
+  name: "NYU Tandon"  # shown next to the logo in the header
   # `logo` is shown in the white header (NYU WIRELESS logo), `logo_white` in
   # the violet footer (NYU torch; files in assets/images/nyu/, where "long"
   # versions spell out NEW YORK UNIVERSITY). Leave "" to hide.

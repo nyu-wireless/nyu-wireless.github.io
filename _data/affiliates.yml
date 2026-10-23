@@ -1,0 +1,33 @@
+# Industrial affiliates, shown on the home page (alphabetical).
+# Logos are in assets/images/affiliates/, cropped from the affiliates image on
+# wireless.engineering.nyu.edu.
+- name: "Analog Devices"
+  logo: /assets/images/affiliates/analog-devices.png
+  url: https://www.analog.com/
+- name: "Apple"
+  logo: /assets/images/affiliates/apple.png
+  url: https://www.apple.com/
+- name: "Ericsson"
+  logo: /assets/images/affiliates/ericsson.png
+  url: https://www.ericsson.com/
+- name: "JMA Wireless"
+  logo: /assets/images/affiliates/jma-wireless.png
+  url: https://jmawireless.com/
+- name: "Keysight"
+  logo: /assets/images/affiliates/keysight.png
+  url: https://www.keysight.com/
+- name: "MediaTek"
+  logo: /assets/images/affiliates/mediatek.png
+  url: https://www.mediatek.com/
+- name: "Nokia"
+  logo: /assets/images/affiliates/nokia.png
+  url: https://www.nokia.com/
+- name: "Qualcomm"
+  logo: /assets/images/affiliates/qualcomm.png
+  url: https://www.qualcomm.com/
+- name: "Sharp"
+  logo: /assets/images/affiliates/sharp.png
+  url: https://global.sharp/
+- name: "UMC"
+  logo: /assets/images/affiliates/umc.png
+  url: https://www.umc.com/

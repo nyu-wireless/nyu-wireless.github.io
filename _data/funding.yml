@@ -1,0 +1,13 @@
+# Federal funding agencies, shown on the home page below the affiliates.
+# Logos are in assets/images/funding/ (NSF cropped from the affiliates image on
+# wireless.engineering.nyu.edu; NTIA from ntia.gov, recolored for a light
+# background; DARPA from Wikimedia Commons).
+- name: "National Science Foundation"
+  logo: /assets/images/funding/nsf.png
+  url: https://www.nsf.gov/
+- name: "National Telecommunications and Information Administration"
+  logo: /assets/images/funding/ntia.svg
+  url: https://www.ntia.gov/
+- name: "Defense Advanced Research Projects Agency"
+  logo: /assets/images/funding/darpa.png
+  url: https://www.darpa.mil/

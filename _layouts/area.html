@@ -4,7 +4,7 @@ layout: default
 {% assign area = site.data.areas | where: "slug", page.area | first %}
 <section class="page-hero">
   <div class="container">
-    <a class="eyebrow eyebrow-link" href="{{ '/#areas' | relative_url }}">&larr; Research areas</a>
+    <a class="eyebrow eyebrow-link" href="{{ '/research/' | relative_url }}">&larr; Research areas</a>
     <h1>{{ area.title }}</h1>
     <p>{{ area.summary }}</p>
   </div>

@@ -1,6 +1,8 @@
 # Top navigation bar
 main:
-  - title: "Research"
+  - title: "Home"
     url: /
+  - title: "Research"
+    url: /research/
   - title: "People"
     url: /people/
