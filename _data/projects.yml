@@ -179,3 +179,10 @@
   image: "/assets/images/projects/wirelessnerd/banner.jpg"
   image_position: "left top"
   areas: [ai-ml]
+
+- title: "Coding and Streaming of Point Cloud Video"
+  pis: ["Yong Liu", "Yao Wang"]
+  summary: "Learned coding and field-of-view-adaptive streaming of 3D point cloud video, with a testbed for dance education."
+  url: "/projects/point-cloud-video/"
+  image: "/assets/images/projects/point-cloud-video/banner.jpg"
+  areas: [applications]
