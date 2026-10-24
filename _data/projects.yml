@@ -171,3 +171,11 @@
   url: "/projects/thz-lab/"
   image: "/assets/images/projects/thz-lab/banner.jpg"
   areas: [circuits, testbeds, wireless]
+
+- title: "WirelessNerd: Question Answering over Wireless Research and 3GPP Standards"
+  pis: ["Dennis Shasha"]
+  summary: "A language model and vector database system that answers wireless questions from arXiv papers and 3GPP documents."
+  url: "/projects/wirelessnerd/"
+  image: "/assets/images/projects/wirelessnerd/banner.jpg"
+  image_position: "left top"
+  areas: [ai-ml]
