@@ -193,14 +193,14 @@
   url: "/projects/ai-isac/"
   image: "/assets/images/projects/ai-isac/banner.png"
   image_fit: contain
-  areas: [wireless]
+  areas: [wireless, ai-ml]
 
 - title: "Multi-Band ISAC in the Upper Mid-Band"
-  pis: ["Marwa Chafii"]
+  pis: ["Marwa Chafii", "Sundeep Rangan", "Aditya Dhananjay"]
   summary: "Multi-band channel measurements and estimators for joint sensing and communication in the upper mid-band (FR3)."
   url: "/projects/multiband-isac-fr3/"
   image: "/assets/images/projects/multiband-isac-fr3/banner.jpg"
-  areas: [wireless]
+  areas: [wireless, testbeds]
 
 - title: "Privacy and Security Challenges in Integrated Sensing and Communications"
   pis: ["Marwa Chafii"]
@@ -219,7 +219,7 @@
   areas: [wireless]
 
 - title: "Digital Twins for Next Generation Wireless Networks"
-  pis: ["Marwa Chafii"]
+  pis: ["Marwa Chafii", "Sundeep Rangan"]
   summary: "Calibrated digital twins of real environments, used to test sensing methods and to map likely device locations."
   url: "/projects/digital-twins/"
   image: "/assets/images/projects/digital-twins/thumb.jpg"

@@ -8,6 +8,8 @@ figures:
 faculty:
   - name: "Marwa Chafii"
     url: "https://nyuad.nyu.edu/en/academics/divisions/engineering/faculty/marwa-chafii.html"
+  - name: "Sundeep Rangan"
+    url: "https://sdrangan.github.io/"
 keywords: ["Digital twins", "Localization", "Integrated sensing and communications", "Upper mid-band (FR3)", "6G"]
 publications:
   - title: "LOCUS-DT: Localization via Observation-Conditioned Uncertainty Scoring with Digital Twins"
@@ -22,4 +24,4 @@ publications:
 
 We are exploring **digital twins**: virtual replicas of real environments that let us test and train new sensing and communication techniques safely, without disrupting live networks. To be trustworthy, these virtual models must be carefully calibrated against real-world measurements, especially in the new frequency bands planned for 6G, where little real data exists yet.
 
-Building on this idea, we developed a method that uses a digital twin of a known indoor space to **locate a device by comparing what it actually receives with what the virtual model predicts**, and it works even in rooms it was never trained on. Rather than settling on a single guess, the method produces a map of all the likely locations. This is valuable in cluttered indoor spaces, where signals bounce off walls and objects and several positions can look equally plausible.
+Building on this idea, we developed [LOCUS-DT](https://arxiv.org/abs/2608.00406), a method that uses a digital twin of a known indoor space to **locate a device by comparing what it actually receives with what the virtual model predicts**, and it works even in rooms it was never trained on. Rather than settling on a single guess, the method produces a map of all the likely locations. This is valuable in cluttered indoor spaces, where signals bounce off walls and objects and several positions can look equally plausible. This work is related to the [Wireless-Aided Robotic Navigation](https://sdrangan.github.io/research/wireless-robotic-navigation/) project, where robots use wireless signals to localize radio sources and navigate.

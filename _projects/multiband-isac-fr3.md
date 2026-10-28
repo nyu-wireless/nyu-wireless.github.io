@@ -9,6 +9,9 @@ figures:
 faculty:
   - name: "Marwa Chafii"
     url: "https://nyuad.nyu.edu/en/academics/divisions/engineering/faculty/marwa-chafii.html"
+  - name: "Sundeep Rangan"
+    url: "https://sdrangan.github.io/"
+  - name: "Aditya Dhananjay"
 keywords: ["Integrated sensing and communications", "Upper mid-band (FR3)", "Multi-band sensing", "Channel measurements", "Localization"]
 publications:
   - title: "Multi-Band Integrated Sensing and Communication Channel Measurements in the FR3"
