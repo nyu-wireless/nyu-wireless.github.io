@@ -32,7 +32,7 @@ wide: true
       <p>Our industrial affiliates are invited to the annual NYU WIRELESS board meeting, where they hear the latest updates from the center and help shape its direction.</p>
       <p>All are welcome to the Open House that afternoon. Explore research from our students at the poster session, and see live demonstrations in our labs.</p>
       <div class="btn-row">
-        <a class="btn btn-primary" href="https://wp.nyu.edu/tandonschoolofengineering-wirelessboardmeeting/">Details and registration &#8599;</a>
+        <a class="btn btn-primary" href="{{ '/events/open-house-2026/' | relative_url }}">Details and registration</a>
       </div>
     </div>
   </div>

@@ -1,0 +1,236 @@
+# NYU WIRELESS Board Meeting and Open House 2026.
+# All the event details live here; the pages under _pages/events/open-house-2026/
+# (layout: event) read them. Update this file to change dates, the agenda,
+# demos or photos.
+
+title: "Board Meeting and Open House"
+date_label: "Tuesday, November 3, 2026"
+tagline: "Join NYU WIRELESS in Brooklyn for our annual board meeting with our industrial affiliates, followed by an afternoon open house with student posters and live lab demos."
+hero_image: /assets/images/events/open-house.jpg
+hero_caption: "A student poster at the NYU WIRELESS Open House"
+address: "370 Jay Street, Brooklyn, NY 11201"
+contact_name: "Teresa Wang"
+contact_email: "info@nyuwireless.com"
+register_by: "October 23, 2026"
+
+# Tabs shown under the page title
+pages:
+  - title: "Overview"
+    url: /events/open-house-2026/
+  - title: "Agenda"
+    url: /events/open-house-2026/agenda/
+  - title: "Posters"
+    url: /events/open-house-2026/posters/
+  - title: "Demos"
+    url: /events/open-house-2026/demos/
+  - title: "Visiting"
+    url: /events/open-house-2026/visiting/
+
+# The two parts of the day
+sessions:
+  - name: "Board Meeting"
+    time: "10:00am – 3:00pm ET"
+    place: "370 Jay Street, 12th floor"
+    audience: "Industrial affiliates"
+    text: "Our industrial affiliates hear the latest from the center, meet the faculty and help shape its direction for the coming year."
+    rsvp_label: "Affiliate RSVP"
+    rsvp_url: "https://docs.google.com/forms/d/103rAfmksp6zDc_eR7YB4atuMFX9Oqw_raKEJ1opb9y8/viewform"
+    note: "Affiliates registered for the board meeting do not need to register separately for the open house."
+  - name: "Open House"
+    time: "3:00pm ET"
+    place: "370 Jay Street, 9th floor"
+    audience: "Open to all"
+    text: "Explore research from our students at the poster session, and see live demonstrations in our labs."
+    rsvp_label: "Open House RSVP"
+    rsvp_url: "https://docs.google.com/forms/d/e/1FAIpQLSfCwkAwFMBnvnLyx1UvqU2Ll9Tis4QmX5W9k5OZnYJBh0DWww/viewform"
+
+# Agenda. `kind` sets the color of the row: board, break or open-house.
+agenda:
+  - time: "10:00am"
+    title: "Welcome and agenda review"
+    speaker: "Sundeep Rangan, Director, NYU WIRELESS"
+    kind: board
+  - time: "10:05am"
+    title: "Opening remarks"
+    speaker: "Juan de Pablo, Executive Dean, NYU Tandon School of Engineering"
+    kind: board
+  - time: "10:25am"
+    title: "Industrial affiliate introductions"
+    detail: "Five minutes per affiliate, no slides."
+    kind: board
+  - time: "10:50am"
+    title: "NYU WIRELESS overview and updates"
+    speaker: "Sundeep Rangan"
+    kind: board
+  - time: "11:30am"
+    title: "Research project presentations"
+    detail: "NYU WIRELESS faculty present current research projects."
+    kind: board
+  - time: "12:00pm"
+    title: "Lunch"
+    place: "12th floor"
+    kind: break
+  - time: "1:00pm"
+    title: "Research project presentations, continued"
+    kind: board
+  - time: "2:00pm"
+    title: "Open discussion"
+    detail: "Feedback, brainstorming and industry perspectives, followed by wrap-up."
+    kind: board
+  - time: "3:00pm"
+    title: "Open House"
+    detail: "Student poster session and live lab demonstrations."
+    place: "9th floor"
+    kind: open-house
+
+# Demo videos. `youtube` is the video id (the part after youtu.be/ or
+# watch?v= in the URL); `url` is an optional link to the project page.
+demos:
+  - title: "HoRAMA: Automated 3D Wireless Digital Twins for AI-Native 6G"
+    people: "Ted Rappaport, Mingjun Ying, Dipankar Shakya"
+    text: "Building 3D models of real environments automatically, for calibrated ray tracing and site-specific channel prediction."
+    youtube: "g3_UKaFLiHI"
+    url: /projects/nyuray/
+  - title: "3.7 GHz Measurement Campaign"
+    people: "Ted Rappaport, Mingjun Ying, Dipankar Shakya"
+    text: "Measuring radio propagation in the 6G mid-band: path loss, delay and angular spreads, and penetration loss."
+    youtube: "c1dtTE_hl58"
+    url: /projects/radio-propagation/
+  - title: "Wireless-Aided Robotic Navigation"
+    people: "Haozhe Lei, Ruibin Chen, Yuhan Jiang, Sundeep Rangan"
+    text: "Robots that localize radio sources and navigate with wireless signals, demonstrated on a 10 GHz robotic testbed."
+    youtube: "PJaz6TokX84"
+    url: https://sdrangan.github.io/research/wireless-robotic-navigation/
+
+# Photos for the Visiting page. Put the files in assets/images/events/open-house-2026/.
+# Example:
+#   - src: /assets/images/events/open-house-2026/brooklyn-bridge-park.jpg
+#     caption: "Brooklyn Bridge Park, a 15-minute walk from 370 Jay St"
+gallery: []
+
+# Poster session, from the sign-up sheet (material/openhouse/*.xlsx, "All" tab).
+# Each topic lists its posters; `presenter` is the student presenting.
+poster_topics:
+  - slug: circuits
+    title: "Circuits & Hardware"
+    posters:
+      - title: "Discrete-Time Modeling and Analysis of N-Path Receivers: Interference and Nonlinear Distortion"
+        presenter: "Jayadev Joy"
+        authors: "Reza Nikandish, Hamed Rahmani, Sundeep Rangan"
+      - title: "A 6-15 GHz Blocker-Tolerant Quadrature-Balanced Mixer-First Receiver with 200 MHz Baseband Bandwidth Achieving < 5.8 dB NF and +5.2 dBm OOB B1dB in 22 nm FDSOI CMOS"
+        presenter: "Peijie Yang"
+        authors: "Hamed Rahmani"
+      - title: "A 6-bit 120-160 GHz Passive Phase Shifter with 360° Coverage in 22 nm FDSOI CMOS Achieving 0.44° / 0.5 dB RMS Phase / Gain Errors and 14-18.6 dB Insertion Loss"
+        presenter: "Wenpu Xia"
+        authors: "Hamed Rahmani"
+      - title: "A 0.195 mm² Band- and Power-Mode-Reconfigurable 5-11 GHz Digital PA with a Single-Footprint 4:1 Combining / Matching Transformer, 25 dBm Psat, 35% PAE, in 22 nm FDSOI CMOS"
+        presenter: "Yingrui Wei"
+        authors: "Hamed Rahmani"
+      - title: "A 7µW Crystal-Less 802.11ba Backscatter Transceiver SoC Achieving 10Mb/s Data Rate over 10m with Carrier-Derived Clock/Data Recovery and Cross-Polarization Frequency-Shifted Uplink Isolation in 65-nm CMOS"
+        presenter: "Chuhan Xue"
+        authors: "Hamed Rahmani"
+  - slug: devices
+    title: "Quantum & Emerging Devices"
+    posters:
+      - title: "Metal-substrate interface engineering of superconducting TaCN resonators"
+        presenter: "Iliya Shiravand"
+        authors: "Davood Shahrjerdi, Moeid Jamalzadeh"
+      - title: "Stopping Ambient Degradation: How HMDS Improves Niobium Superconducting Resonators"
+        presenter: "Moeid Jamalzadeh"
+        authors: "Davood Shahrjerdi, Jiwon Park, Iliya Shiravand"
+      - title: "Electric-Field and Spatial Control of Supercurrent in Bilayer Graphene Josephson Junctions"
+        presenter: "Zihan Zhang"
+        authors: "Davood Shahrjerdi, Zhujun Huang"
+      - title: "Wearable sEMG Platform for Perilaryngeal Muscle Network Monitoring"
+        presenter: "Chengxin Liu"
+        authors: "Davood Shahrjerdi, Zhujun Huang"
+  - slug: twins
+    title: "Channel Measurements & Digital Twins"
+    posters:
+      - title: "HoRAMA: Automated Generation of Reliable 3-D Wireless Digital Twin"
+        presenter: "Mingjun Ying"
+        authors: "Xinquan Wang, Guanyue Qian, Ranjot Dhah, Theodore S. Rappaport"
+      - title: "Radio Propagation Measurements and Modeling: 3.7 GHz FR1 Upper C-Band in Indoor Office, Factory, and Urban Microcell"
+        presenter: "Mingjun Ying"
+        authors: "Xinquan Wang, Ranjot Dhah, Yiyang Guo, Guanyue Qian, Ishaan S. Gupte, Peijie Ma, Bridget Meier, Homa Nikbakht, Daniel Abraham, Theodore S. Rappaport"
+      - title: "Outdoor UMi Channel Statistics at 6.75, 16.95, 28, 73, and 142 GHz: Measurement-Based Evaluation of NYUSIM and 3GPP UMi Channel Models"
+        presenter: "Xinquan Wang"
+        authors: "Homa Nikbakht, Mingjun Ying, Dipankar Shakya, Xingchen Liu, Hitesh Poddar, Art Ishii, Daniel Abraham, Theodore S. Rappaport"
+      - title: "Multi-Cell Multi-Band Handset Digital Twin for Learning-Based Closed-Loop Array Activation"
+        presenter: "Haozhe Lei"
+        authors: "Ruibin Chen, Marco Mezzavilla, Sundeep Rangan"
+      - title: "SWIFT-DT: Semantic Wireless Instant Formation of Twins"
+        presenter: "Yuchen Jiang"
+        authors: "Ahmad Bazzi, Marwa Chafii"
+      - title: "WirelessNerd"
+        presenter: "Shela Wu"
+        authors: "Ahmad Bazzi, Marwa Chafii, Dennis Shasha"
+  - slug: sensing
+    title: "Localization, Sensing & Robotics"
+    posters:
+      - title: "Map-Aware Posterior-based Location Estimation from RF Observations"
+        presenter: "Haozhe Lei"
+        authors: "Sundeep Rangan"
+      - title: "Creating a Spatial-Posterior: Multi-Arrival-Guided Neural Estimation over Transmitter-Pose Alternatives from Radio"
+        presenter: "Haozhe Lei"
+        authors: "Ruibin Chen, Yuhan Jiang, Ali Rasteh, Aditya Dhananjay, Sundeep Rangan"
+      - title: "MobiFR3: A Heterogeneous Robotic Testbed for FR3 Localization and SLAM-Based Navigation"
+        presenter: "Haozhe Lei"
+        authors: "Ruibin Chen, Yuhan Jiang, Ali Rasteh, Aditya Dhananjay, Sundeep Rangan"
+      - title: "Fixed-Autocorrelation Codes for ISAC: Distance Properties (with SDR demo)"
+        presenter: "Parker Huggins"
+        authors: "Alphan Sahin, Elza Erkip"
+      - title: "Falcon: Flexible Aerial Links for Control, Observation, and Navigation"
+        presenter: "Ruibin Chen"
+        authors: "Xiaotian Li, Yong Liu, Sundeep Rangan"
+  - slug: mimo
+    title: "MIMO, Satellite & Communication Theory"
+    posters:
+      - title: "Coupling-Aware Irregular Arrays: Turning Subwavelength Spacing into a Performance Advantage"
+        presenter: "Xiangyu Cui"
+        authors: "Vaibhav Kumar, Qurrat-Ul-Ain Nadeem"
+      - title: "Predicting CSI in Massive MIMO: Learning Path Dynamics to Combat Channel Aging"
+        presenter: "Xiangyu Cui"
+        authors: "Qurrat-Ul-Ain Nadeem"
+      - title: "Task-Oriented Feedback and 3GPP Codebook-Based Precoding for FDD Multi-User MIMO"
+        presenter: "Yongqiang Zhang"
+        authors: "Qurrat-Ul-Ain Nadeem"
+      - title: "Joint Beamforming and RIS Deployment Optimization for Outdoor-to-Indoor Coverage at Upper Mid-Band"
+        presenter: "Mingjun Ying"
+        authors: "Guanyue Qian, Xinquan Wang, Xingchen Liu, Ishaan S. Gupte, Dipankar Shakya, Theodore S. Rappaport"
+      - title: "Noncoherent Detection and Interference Nulling for Terrestrial-Satellite Downlink Coexistence in the Upper Mid-Band"
+        presenter: "Shizhen Jia"
+        authors: "C. Nicolas Barati, Marco Mezzavilla, Sundeep Rangan"
+      - title: "Multi-layer intra-cell beam overlapping evaluation for LEO communications"
+        presenter: "Shizhen Jia"
+        authors: "Hao Guo, Roy Sun, Mark Poletti, Sundeep Rangan"
+      - title: "Narrowband OTA Phase Calibration, Multipath Statistics, Spatial Averaging and Sampling"
+        presenter: "Shizhen Jia"
+        authors: "Sundeep Rangan"
+      - title: "Impact of State Knowledge on Covert Communication in the Presence of Simultaneous Transmission"
+        presenter: "Aritra Roy"
+        authors: "Elza Erkip"
+  - slug: networking
+    title: "Networking, Learning & Media"
+    posters:
+      - title: "Extending Low Latency Service Across the Internet"
+        presenter: "Fatih Berkay Sarpkaya"
+        authors: "Harkirat Singh, Hakan Gulec, Fraida Fund, Shivendra Panwar"
+      - title: "Inherited Fragility in Dual-Queue AQMs under Heterogeneous Congestion Control"
+        presenter: "Fatih Berkay Sarpkaya"
+        authors: "Fraida Fund, Shivendra Panwar"
+      - title: "Mind the Generalization Gap: Lessons from Reproducing Research on Machine Learning for Wireless Networks"
+        presenter: "Lavesh Mangal"
+        authors: "Fraida Fund, Shivendra Panwar"
+      - title: "What Do Spectrum Prediction Models Learn?"
+        presenter: "Lavesh Mangal"
+        authors: "Demarce Williams, Fraida Fund, Shivendra Panwar"
+      - title: "FedTRust: Reliability-Gated Function-Space Trust for Federated Feed-Forward 3D Reconstruction"
+        presenter: "Zhixiang Zhou"
+        authors: "Xiaoyu Wang, Xiaotian Li, Yong Liu"
+      - title: "Co-Optimizing Data Buffers and Model Caches in Decentralized Federated Learning via Analytical MPC"
+        presenter: "Xiaotian Li"
+        authors: "Xiaoyu Wang, Yong Liu"
+      - title: "Static and Dynamic Gaussian Splats Coding"
+        presenter: "Chenjunjie Wang"
+        authors: ""
