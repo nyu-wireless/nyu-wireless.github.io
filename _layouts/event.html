@@ -1,0 +1,43 @@
+---
+layout: default
+---
+{% comment %}
+  Event page with tabs. Front matter: event (the _data file with the event
+  details, e.g. open_house_2026), optional heading (shown under the event
+  title on sub-pages) and hero_photo: true to show the event photo beside the
+  title. The page body follows the banner.
+{% endcomment %}
+{% assign ev = site.data[page.event] %}
+<section class="page-hero event-hero">
+  <div class="container{% if page.hero_photo %} hero-grid{% endif %}">
+    <div>
+      <span class="eyebrow">{{ ev.date_label }}</span>
+      <h1>{{ ev.title }}{% if page.heading %}<span class="event-heading">{{ page.heading }}</span>{% endif %}</h1>
+      {% if page.hero_photo %}<p>{{ ev.tagline }}</p>{% endif %}
+      <p class="hero-meta">{{ ev.address }}</p>
+      <div class="btn-row event-rsvp">
+        {% for s in ev.sessions %}<a class="btn {% if forloop.first %}btn-white{% else %}btn-ghost{% endif %}" href="{{ s.rsvp_url }}">{{ s.rsvp_label }} &#8599;</a>{% endfor %}
+      </div>
+    </div>
+    {% if page.hero_photo %}
+    <figure class="hero-photo">
+      <img src="{{ ev.hero_image | relative_url }}" alt="{{ ev.hero_caption | escape }}">
+      <figcaption>{{ ev.hero_caption }}</figcaption>
+    </figure>
+    {% endif %}
+  </div>
+  <div class="container">
+    <nav class="subnav event-tabs" aria-label="{{ ev.title }} pages">
+      {% for p in ev.pages %}<a href="{{ p.url | relative_url }}"{% if p.url == page.url %} class="active" aria-current="page"{% endif %}>{{ p.title }}</a>{% endfor %}
+    </nav>
+  </div>
+</section>
+
+<section class="page-body">
+  <div class="container prose">
+{{ content }}
+    <div class="note event-contact">
+      <p>Questions? Contact {{ ev.contact_name }} at <a href="mailto:{{ ev.contact_email }}">{{ ev.contact_email }}</a>.</p>
+    </div>
+  </div>
+</section>
