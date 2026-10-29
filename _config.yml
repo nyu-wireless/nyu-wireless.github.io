@@ -27,7 +27,6 @@ branding:
 
 contact:
   address: "370 Jay St, Brooklyn, NY 11201"
-  nyu_wireless: "https://wireless.engineering.nyu.edu/"
 
 # Build settings ----------------------------------------------------------
 markdown: kramdown

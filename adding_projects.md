@@ -36,7 +36,7 @@ git checkout -b add-<your-lastname>-projects
 | Option | When to use it | What you add |
 |---|---|---|
 | **A. Link to an existing page** | The project already has a good page (lab site, group site, GitHub Pages site) | One entry in `_data/projects.yml` and a thumbnail image |
-| **B. Write a short page on this site** | The project has no page, or only an old one on wireless.engineering.nyu.edu | One entry in `_data/projects.yml`, one Markdown file in `_projects/`, and images |
+| **B. Write a short page on this site** | The project has no page, or only an old one on the former NYU WIRELESS site | One entry in `_data/projects.yml`, one Markdown file in `_projects/`, and images |
 
 You can mix options: for example, link to your lab's home page (A) and write
 short pages for two projects that have no page of their own (B).

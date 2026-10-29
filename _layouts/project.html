@@ -108,14 +108,14 @@ layout: default
     <p class="section-label section-gap">Selected publications</p>
     <div class="project-list">
       {% for pub in page.publications %}
-      <a class="project-row" href="{{ pub.url }}">
+      {% if pub.url %}<a class="project-row" href="{{ pub.url }}">{% else %}<div class="project-row">{% endif %}
         {% if pub.image %}<img class="project-row-thumb project-row-thumb-contain" src="{{ pub.image | relative_url }}" alt="">{% endif %}
         <span class="project-row-body">
           <span class="project-row-title">{{ pub.title }}</span>
           <span class="project-row-summary">{{ pub.authors }}</span>
           <span class="project-row-pis">{{ pub.venue }}</span>
         </span>
-      </a>
+      {% if pub.url %}</a>{% else %}</div>{% endif %}
       {% endfor %}
     </div>
     {% endif %}

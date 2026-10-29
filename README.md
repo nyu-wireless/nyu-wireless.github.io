@@ -1,7 +1,7 @@
 # NYU WIRELESS Research
 
 Source for <https://nyu-wireless.github.io>, the research site of
-[NYU WIRELESS](https://wireless.engineering.nyu.edu/). It is a plain Jekyll
+NYU WIRELESS. It is a plain Jekyll
 site built by GitHub Pages from the `master` branch, styled to match the NYU
 WIRELESS faculty group sites.
 

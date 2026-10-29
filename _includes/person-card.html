@@ -1,7 +1,7 @@
 {% assign p = include.person %}
 <div class="member-card">
-  <a href="{{ p.url }}"><img class="member-photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}"{% if p.photo_position %} style="object-position: {{ p.photo_position }}"{% endif %}></a>
-  <h3 class="member-name"><a href="{{ p.url }}">{{ p.name }}</a></h3>
+  {% if p.url %}<a href="{{ p.url }}">{% endif %}<img class="member-photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}"{% if p.photo_position %} style="object-position: {{ p.photo_position }}"{% endif %}>{% if p.url %}</a>{% endif %}
+  <h3 class="member-name">{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
   {% if p.role %}<span class="role-badge">{{ p.role }}</span>{% endif %}
   <p class="member-interests">{{ p.title }}{% if p.campus %}<br><strong>{{ p.campus }}</strong>{% endif %}</p>
 </div>
