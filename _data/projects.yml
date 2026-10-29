@@ -19,8 +19,7 @@
   pis: ["Sundeep Rangan", "Yong Liu"]
   summary: "Resilient FR3 links for aerial robots, from agile transceivers to multipath transport, flight-tested on NSF AERPAW."
   url: "https://sdrangan.github.io/falcon/"
-  image: "/assets/images/projects/falcon.svg"
-  image_fit: contain
+  image: "/assets/images/projects/falcon.jpg"
   areas: [wireless, networking, applications, testbeds]
 
 - title: "Hardware-Algorithm Co-Design"
