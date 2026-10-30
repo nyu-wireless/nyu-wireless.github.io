@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 576" role="img" aria-labelledby="t d" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+  <title id="t">Neural distributed compression with decoder side information</title>
+  <desc id="d">A learned encoder compresses a source X into R bits; a learned decoder combines the bits with side information Y, available only at the decoder. Below, a schematic of learned binning: the same quantization index is reused on intervals far apart, and the side information selects the right one.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf9fc"/><stop offset="1" stop-color="#f1eaf6"/>
+    </linearGradient>
+    <linearGradient id="vgrad" x1="0" x2="1">
+      <stop offset="0" stop-color="#57068c"/><stop offset="1" stop-color="#8900e1"/>
+    </linearGradient>
+    <marker id="av" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#57068c"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#6d6578"/></marker>
+    <marker id="at" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#00979a"/></marker>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#1e0a32" flood-opacity=".10"/></filter>
+  </defs>
+  <rect width="960" height="576" fill="url(#bg)"/>
+<text x="70" y="156" font-size="26" fill="#1d1626" font-weight="600" text-anchor="middle" font-style="italic">X</text>
+<text x="70" y="182" font-size="14" fill="#6d6578" font-weight="400" text-anchor="middle" >source</text>
+<line x1="96" y1="150" x2="196" y2="150" stroke="#4a4257" stroke-width="2.2" marker-end="url(#ag)"/>
+<rect x="200" y="92" width="170" height="116" rx="14" fill="#fff" stroke="#e4dde9" stroke-width="1.5" filter="url(#sh)"/>
+<line x1="259.0" y1="122.0" x2="285.0" y2="113.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="259.0" y1="122.0" x2="285.0" y2="131.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="259.0" y1="122.0" x2="285.0" y2="149.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="259.0" y1="122.0" x2="285.0" y2="167.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="259.0" y1="140.0" x2="285.0" y2="113.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="259.0" y1="140.0" x2="285.0" y2="131.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="259.0" y1="140.0" x2="285.0" y2="149.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="259.0" y1="140.0" x2="285.0" y2="167.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="259.0" y1="158.0" x2="285.0" y2="113.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="259.0" y1="158.0" x2="285.0" y2="131.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="259.0" y1="158.0" x2="285.0" y2="149.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="259.0" y1="158.0" x2="285.0" y2="167.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="285.0" y1="113.0" x2="311.0" y2="131.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="285.0" y1="113.0" x2="311.0" y2="149.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="285.0" y1="131.0" x2="311.0" y2="131.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="285.0" y1="131.0" x2="311.0" y2="149.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="285.0" y1="149.0" x2="311.0" y2="131.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="285.0" y1="149.0" x2="311.0" y2="149.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="285.0" y1="167.0" x2="311.0" y2="131.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="285.0" y1="167.0" x2="311.0" y2="149.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<circle cx="259.0" cy="122.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<circle cx="259.0" cy="140.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<circle cx="259.0" cy="158.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<circle cx="285.0" cy="113.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<circle cx="285.0" cy="131.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<circle cx="285.0" cy="149.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<circle cx="285.0" cy="167.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<circle cx="311.0" cy="131.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<circle cx="311.0" cy="149.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<text x="285" y="194" font-size="15" fill="#1d1626" font-weight="600" text-anchor="middle" >Learned encoder</text>
+<line x1="372" y1="150" x2="580" y2="150" stroke="#57068c" stroke-width="2.4" marker-end="url(#av)"/>
+<rect x="439.0" y="136" width="74" height="28" rx="14" fill="#fff" stroke="#57068c" stroke-width="1.6"/><text x="476" y="155.5" font-size="15" fill="#57068c" font-weight="600" text-anchor="middle" font-family="Consolas, 'Roboto Mono', monospace" letter-spacing="2">0110</text>
+<text x="476" y="124" font-size="14.5" fill="#57068c" font-weight="600" text-anchor="middle" >rate R bits</text>
+<rect x="584" y="92" width="170" height="116" rx="14" fill="#fff" stroke="#e4dde9" stroke-width="1.5" filter="url(#sh)"/>
+<line x1="643.0" y1="122.0" x2="669.0" y2="113.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="643.0" y1="122.0" x2="669.0" y2="131.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="643.0" y1="122.0" x2="669.0" y2="149.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="643.0" y1="122.0" x2="669.0" y2="167.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="643.0" y1="140.0" x2="669.0" y2="113.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="643.0" y1="140.0" x2="669.0" y2="131.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="643.0" y1="140.0" x2="669.0" y2="149.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="643.0" y1="140.0" x2="669.0" y2="167.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="643.0" y1="158.0" x2="669.0" y2="113.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="643.0" y1="158.0" x2="669.0" y2="131.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="643.0" y1="158.0" x2="669.0" y2="149.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="643.0" y1="158.0" x2="669.0" y2="167.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="669.0" y1="113.0" x2="695.0" y2="131.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="669.0" y1="113.0" x2="695.0" y2="149.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="669.0" y1="131.0" x2="695.0" y2="131.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="669.0" y1="131.0" x2="695.0" y2="149.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="669.0" y1="149.0" x2="695.0" y2="131.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="669.0" y1="149.0" x2="695.0" y2="149.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="669.0" y1="167.0" x2="695.0" y2="131.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<line x1="669.0" y1="167.0" x2="695.0" y2="149.0" stroke="#57068c" stroke-opacity=".45" stroke-width="1.20"/>
+<circle cx="643.0" cy="122.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<circle cx="643.0" cy="140.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<circle cx="643.0" cy="158.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<circle cx="669.0" cy="113.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<circle cx="669.0" cy="131.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<circle cx="669.0" cy="149.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<circle cx="669.0" cy="167.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<circle cx="695.0" cy="131.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<circle cx="695.0" cy="149.0" r="4.2" fill="#fff" stroke="#57068c" stroke-width="1.80"/>
+<text x="669" y="194" font-size="15" fill="#1d1626" font-weight="600" text-anchor="middle" >Learned decoder</text>
+<line x1="756" y1="150" x2="850" y2="150" stroke="#4a4257" stroke-width="2.2" marker-end="url(#ag)"/>
+<text x="880" y="156" font-size="26" fill="#1d1626" font-weight="600" text-anchor="middle" font-style="italic">X̂</text>
+<text x="880" y="182" font-size="14" fill="#6d6578" font-weight="400" text-anchor="middle" >estimate</text>
+<path d="M669 262 L669 212" stroke="#00979a" stroke-width="2.4" stroke-dasharray="7 5" fill="none" marker-end="url(#at)"/>
+<text x="669" y="290" font-size="24" fill="#00979a" font-weight="600" text-anchor="middle" font-style="italic">Y</text>
+<text x="700" y="287" font-size="14.5" fill="#00979a" font-weight="500" text-anchor="start" >side information, decoder only</text>
+<text x="70" y="352" font-size="17" fill="#1d1626" font-weight="600" text-anchor="start" >Learned binning: one index is reused on intervals far apart</text>
+<rect x="71.0" y="408" width="49.2" height="44" rx="5" fill="#57068c" fill-opacity=".85"/>
+<text x="95.6" y="436" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >0</text>
+<rect x="122.2" y="408" width="49.2" height="44" rx="5" fill="#00979a" fill-opacity=".85"/>
+<text x="146.9" y="436" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >1</text>
+<rect x="173.5" y="408" width="49.2" height="44" rx="5" fill="#e07b1a" fill-opacity=".85"/>
+<text x="198.1" y="436" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >2</text>
+<rect x="224.8" y="408" width="49.2" height="44" rx="5" fill="#d6336c" fill-opacity=".85"/>
+<text x="249.4" y="436" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >3</text>
+<rect x="276.0" y="408" width="49.2" height="44" rx="5" fill="#57068c" fill-opacity=".85"/>
+<text x="300.6" y="436" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >0</text>
+<rect x="327.2" y="408" width="49.2" height="44" rx="5" fill="#00979a" fill-opacity=".85"/>
+<text x="351.9" y="436" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >1</text>
+<rect x="378.5" y="408" width="49.2" height="44" rx="5" fill="#e07b1a" fill-opacity=".85"/>
+<text x="403.1" y="436" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >2</text>
+<rect x="429.8" y="408" width="49.2" height="44" rx="5" fill="#d6336c" fill-opacity=".85"/>
+<text x="454.4" y="436" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >3</text>
+<rect x="481.0" y="408" width="49.2" height="44" rx="5" fill="#57068c" fill-opacity=".85"/>
+<text x="505.6" y="436" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >0</text>
+<rect x="532.2" y="408" width="49.2" height="44" rx="5" fill="#00979a" fill-opacity=".85"/>
+<text x="556.9" y="436" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >1</text>
+<rect x="583.5" y="408" width="49.2" height="44" rx="5" fill="#e07b1a" fill-opacity=".85"/>
+<text x="608.1" y="436" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >2</text>
+<rect x="634.8" y="408" width="49.2" height="44" rx="5" fill="#d6336c" fill-opacity=".85"/>
+<text x="659.4" y="436" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >3</text>
+<rect x="686.0" y="408" width="49.2" height="44" rx="5" fill="#57068c" fill-opacity=".85"/>
+<text x="710.6" y="436" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >0</text>
+<rect x="737.2" y="408" width="49.2" height="44" rx="5" fill="#00979a" fill-opacity=".85"/>
+<text x="761.9" y="436" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >1</text>
+<rect x="788.5" y="408" width="49.2" height="44" rx="5" fill="#e07b1a" fill-opacity=".85"/>
+<text x="813.1" y="436" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >2</text>
+<rect x="839.8" y="408" width="49.2" height="44" rx="5" fill="#d6336c" fill-opacity=".85"/>
+<text x="864.4" y="436" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >3</text>
+<line x1="70" y1="464" x2="890" y2="464" stroke="#6d6578" stroke-width="1.5" marker-end="url(#ag)"/>
+<text x="898" y="470" font-size="17" fill="#6d6578" font-weight="500" text-anchor="start" font-style="italic">x</text>
+<polyline points="460.9,541.7 462.5,541.7 464.1,541.6 465.7,541.5 467.3,541.4 468.9,541.3 470.5,541.2 472.1,541.1 473.7,540.9 475.3,540.8 476.9,540.6 478.5,540.3 480.1,540.1 481.7,539.8 483.3,539.5 484.9,539.1 486.5,538.7 488.1,538.2 489.7,537.7 491.3,537.2 492.9,536.6 494.5,535.9 496.1,535.1 497.7,534.3 499.3,533.5 500.9,532.5 502.5,531.5 504.1,530.4 505.7,529.2 507.3,528.0 508.9,526.7 510.5,525.3 512.1,523.8 513.7,522.3 515.3,520.7 516.9,519.0 518.5,517.3 520.1,515.5 521.7,513.7 523.3,511.8 524.9,509.9 526.5,508.0 528.1,506.1 529.7,504.2 531.3,502.3 532.9,500.4 534.5,498.6 536.1,496.8 537.7,495.1 539.3,493.5 540.9,492.0 542.5,490.5 544.1,489.2 545.7,488.1 547.3,487.0 548.9,486.1 550.5,485.4 552.1,484.8 553.7,484.3 555.3,484.1 556.9,484.0 558.5,484.1 560.1,484.3 561.7,484.8 563.3,485.4 564.9,486.1 566.5,487.0 568.1,488.1 569.7,489.2 571.3,490.5 572.9,492.0 574.5,493.5 576.1,495.1 577.7,496.8 579.3,498.6 580.9,500.4 582.5,502.3 584.1,504.2 585.7,506.1 587.3,508.0 588.9,509.9 590.5,511.8 592.1,513.7 593.7,515.5 595.3,517.3 596.9,519.0 598.5,520.7 600.1,522.3 601.7,523.8 603.3,525.3 604.9,526.7 606.5,528.0 608.1,529.2 609.7,530.4 611.3,531.5 612.9,532.5 614.5,533.5 616.1,534.3 617.7,535.1 619.3,535.9 620.9,536.6 622.5,537.2 624.1,537.7 625.7,538.2 627.3,538.7 628.9,539.1 630.5,539.5 632.1,539.8 633.7,540.1 635.3,540.3 636.9,540.6 638.5,540.8 640.1,540.9 641.7,541.1 643.3,541.2 644.9,541.3 646.5,541.4 648.1,541.5 649.7,541.6 651.3,541.7 652.9,541.7" fill="none" stroke="#00979a" stroke-width="2.4"/>
+<line x1="446.875" y1="542" x2="666.875" y2="542" stroke="#e4dde9" stroke-width="1.5"/>
+<rect x="530.2" y="405" width="53.2" height="50" rx="7" fill="none" stroke="#1d1626" stroke-width="2.4"/>
+<text x="439" y="514" font-size="14.5" fill="#00979a" font-weight="500" text-anchor="end" >p(x | y): side information</text>
+<text x="439" y="534" font-size="14.5" fill="#00979a" font-weight="500" text-anchor="end" >selects the right interval</text>
+</svg>

@@ -223,3 +223,31 @@
   url: "/projects/digital-twins/"
   image: "/assets/images/projects/digital-twins/thumb.jpg"
   areas: [wireless]
+
+- title: "Learned CSI Feedback for Massive MIMO"
+  pis: ["Elza Erkip"]
+  summary: "End-to-end learned pilots, CSI feedback and precoding that maximize sum rate with few feedback bits."
+  url: "/projects/ml-csi-feedback/"
+  image: "/assets/images/projects/ml-csi-feedback/banner.svg"
+  areas: [wireless, ai-ml]
+
+- title: "Neural Distributed Compression"
+  pis: ["Elza Erkip"]
+  summary: "Learned compressors that use decoder-side information and rediscover binning from information theory."
+  url: "/projects/neural-distributed-compression/"
+  image: "/assets/images/projects/neural-distributed-compression/banner.svg"
+  areas: [wireless, ai-ml]
+
+- title: "Constrained Deep Reinforcement Learning for Cost-Efficient and Timely Packet Delivery"
+  pis: ["Elza Erkip"]
+  summary: "Multi-agent constrained RL for routing and scheduling that meets per-packet deadlines at low cost."
+  url: "/projects/constrained-rl-packet-delivery/"
+  image: "/assets/images/projects/constrained-rl-packet-delivery/banner.svg"
+  areas: [wireless, ai-ml]
+
+- title: "Learning-Based Compress-and-Forward for Relay and Diamond Relay Channels"
+  pis: ["Elza Erkip"]
+  summary: "Learned relay quantizers for compress-and-forward that operate close to information-theoretic bounds."
+  url: "/projects/learned-compress-and-forward/"
+  image: "/assets/images/projects/learned-compress-and-forward/banner.svg"
+  areas: [wireless, ai-ml]
