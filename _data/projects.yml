@@ -11,8 +11,7 @@
   pis: ["Sundeep Rangan", "Hamed Rahmani"]
   summary: "Wideband, frequency-agile RFICs and tileable massive MIMO radios for the upper mid-band (FR3)."
   url: "https://sdrangan.github.io/research/spectrally-agile-arrays/"
-  image: "/assets/images/projects/salsa.svg"
-  image_fit: contain
+  image: "/assets/images/projects/salsa.jpg"
   areas: [wireless, networking, circuits, testbeds]
 
 - title: "FALCON: Flexible Aerial Links for Control, Observation, and Navigation"
