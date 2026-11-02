@@ -278,3 +278,17 @@
   url: "/projects/fixed-autocorrelation-codes/"
   image: "/assets/images/projects/fixed-autocorrelation-codes/banner.svg"
   areas: [wireless]
+
+- title: "Security Testing and Analysis of 5G Cellular Networks"
+  pis: ["Christina Pöpper"]
+  summary: "Automated over-the-air testing and LLM-assisted analysis of the security of 5G standalone user devices."
+  url: "/projects/5g-security-testing/"
+  image: "/assets/images/projects/5g-security-testing/banner.svg"
+  areas: [networking, testbeds, ai-ml]
+
+- title: "Securing Air-Traffic Surveillance and Satellite-Based Communication"
+  pis: ["Christina Pöpper"]
+  summary: "Verifying ADS-B and search-and-rescue satellite signals with sensor networks and message authentication."
+  url: "/projects/aviation-satellite-security/"
+  image: "/assets/images/projects/aviation-satellite-security/banner.svg"
+  areas: [networking]

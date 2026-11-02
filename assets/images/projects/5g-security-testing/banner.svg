@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 576" role="img" aria-labelledby="t d" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+  <title id="t">Automated over-the-air security testing of 5G standalone devices</title>
+  <desc id="d">Test cases generated from 3GPP specifications are run over the air against a phone in a Faraday cage, then evaluated with rule-based checks and large language models.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf9fc"/><stop offset="1" stop-color="#f1eaf6"/>
+    </linearGradient>
+    <linearGradient id="vgrad" x1="0" x2="1">
+      <stop offset="0" stop-color="#57068c"/><stop offset="1" stop-color="#8900e1"/>
+    </linearGradient>
+    <marker id="av" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#57068c"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6d6578"/></marker>
+    <marker id="at" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#00979a"/></marker>
+    <marker id="ap" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d6336c"/></marker>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#1e0a32" flood-opacity=".10"/></filter>
+  </defs>
+  <rect width="960" height="576" fill="url(#bg)"/>
+<rect x="36" y="60" width="256" height="456" rx="14" fill="#fff" stroke="#e4dde9" stroke-width="1.5" filter="url(#sh)"/>
+<circle cx="70" cy="98" r="16" fill="url(#vgrad)"/><text x="70" y="104" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">1</text>
+<text x="96" y="104" font-size="17.5" fill="#57068c" font-weight="700" text-anchor="start">Generate</text>
+<rect x="58" y="132" width="212" height="58" rx="10" fill="#f6f1fa" stroke="#e4dde9" stroke-width="1.5"/>
+<text x="164" y="158" font-size="14.5" fill="#1d1626" font-weight="600" text-anchor="middle">NAS protocol</text>
+<text x="164" y="176" font-size="12.5" fill="#6d6578" font-weight="400" text-anchor="middle">3GPP TS 24.501</text>
+<rect x="58" y="200" width="212" height="58" rx="10" fill="#f6f1fa" stroke="#e4dde9" stroke-width="1.5"/>
+<text x="164" y="226" font-size="14.5" fill="#1d1626" font-weight="600" text-anchor="middle">5G security</text>
+<text x="164" y="244" font-size="12.5" fill="#6d6578" font-weight="400" text-anchor="middle">3GPP TS 33.501</text>
+<rect x="58" y="268" width="212" height="58" rx="10" fill="#f6f1fa" stroke="#e4dde9" stroke-width="1.5"/>
+<text x="164" y="294" font-size="14.5" fill="#1d1626" font-weight="600" text-anchor="middle">Open5GS core</text>
+<text x="164" y="312" font-size="12.5" fill="#6d6578" font-weight="400" text-anchor="middle">supported messages</text>
+<line x1="164" y1="332" x2="164" y2="366" stroke="#57068c" stroke-width="2.4" marker-end="url(#av)"/>
+<path d="M112 386v64a52 15 0 0 0 104 0v-64" fill="#efe6f6" stroke="#57068c" stroke-width="2"/><ellipse cx="164" cy="386" rx="52" ry="15" fill="#fff" stroke="#57068c" stroke-width="2"/><path d="M112 418a52 15 0 0 0 104 0" fill="none" stroke="#57068c" stroke-width="1.4" opacity=".5"/><text x="164" y="500" font-size="14" fill="#1d1626" font-weight="600" text-anchor="middle">About 26,000 test cases</text>
+<rect x="352" y="60" width="256" height="456" rx="14" fill="#fff" stroke="#e4dde9" stroke-width="1.5" filter="url(#sh)"/>
+<circle cx="386" cy="98" r="16" fill="url(#vgrad)"/><text x="386" y="104" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">2</text>
+<text x="412" y="104" font-size="17.5" fill="#57068c" font-weight="700" text-anchor="start">Execute over the air</text>
+<g fill="none" stroke="#57068c" stroke-width="3" stroke-linejoin="round"><path d="M410 186L384 318M410 186L436 318M395 262H425M389 292H431M401 232H419"/></g><circle cx="410" cy="182" r="6" fill="#57068c"/><path d="M426.0 170.0A20 20 0 0 1 426.0 194.0" fill="none" stroke="#00979a" stroke-width="3" opacity="0.9"/><path d="M437.2 161.6A34 34 0 0 1 437.2 202.4" fill="none" stroke="#00979a" stroke-width="3" opacity="0.6"/><path d="M448.4 153.2A48 48 0 0 1 448.4 210.8" fill="none" stroke="#00979a" stroke-width="3" opacity="0.35"/><rect x="480" y="136" width="108" height="186" rx="8" fill="#eef0f3" stroke="#1d1626" stroke-width="3"/><line x1="498" y1="136" x2="498" y2="322" stroke="#c5c8d0" stroke-width="1"/><line x1="516" y1="136" x2="516" y2="322" stroke="#c5c8d0" stroke-width="1"/><line x1="534" y1="136" x2="534" y2="322" stroke="#c5c8d0" stroke-width="1"/><line x1="552" y1="136" x2="552" y2="322" stroke="#c5c8d0" stroke-width="1"/><line x1="570" y1="136" x2="570" y2="322" stroke="#c5c8d0" stroke-width="1"/><line x1="480" y1="154.6" x2="588" y2="154.6" stroke="#c5c8d0" stroke-width="1"/><line x1="480" y1="173.2" x2="588" y2="173.2" stroke="#c5c8d0" stroke-width="1"/><line x1="480" y1="191.8" x2="588" y2="191.8" stroke="#c5c8d0" stroke-width="1"/><line x1="480" y1="210.4" x2="588" y2="210.4" stroke="#c5c8d0" stroke-width="1"/><line x1="480" y1="229.0" x2="588" y2="229.0" stroke="#c5c8d0" stroke-width="1"/><line x1="480" y1="247.6" x2="588" y2="247.6" stroke="#c5c8d0" stroke-width="1"/><line x1="480" y1="266.2" x2="588" y2="266.2" stroke="#c5c8d0" stroke-width="1"/><line x1="480" y1="284.8" x2="588" y2="284.8" stroke="#c5c8d0" stroke-width="1"/><line x1="480" y1="303.4" x2="588" y2="303.4" stroke="#c5c8d0" stroke-width="1"/><rect x="510" y="170" width="48" height="104" rx="9" fill="#1d1626"/><rect x="514" y="178" width="40" height="86" rx="3" fill="url(#vgrad)"/><circle cx="534" cy="268" r="2.4" fill="#fff"/><text x="410" y="344" font-size="14" fill="#1d1626" font-weight="600" text-anchor="middle">gNodeB</text>
+<text x="410" y="362" font-size="12.5" fill="#6d6578" font-weight="400" text-anchor="middle">srsRAN, USRP</text>
+<text x="534" y="344" font-size="14" fill="#1d1626" font-weight="600" text-anchor="middle">Faraday cage</text>
+<text x="534" y="362" font-size="12.5" fill="#6d6578" font-weight="400" text-anchor="middle">5G SA phone</text>
+<rect x="374" y="382" width="212" height="44" rx="10" fill="#e6f4f4" stroke="#e4dde9" stroke-width="1.5"/>
+<text x="480" y="409" font-size="14.5" fill="#1d1626" font-weight="600" text-anchor="middle">Downlink NAS message</text>
+<line x1="480" y1="428" x2="480" y2="452" stroke="#00979a" stroke-width="2.4" marker-end="url(#at)"/>
+<rect x="374" y="454" width="212" height="44" rx="10" fill="#e6f4f4" stroke="#e4dde9" stroke-width="1.5"/>
+<text x="480" y="481" font-size="14.5" fill="#1d1626" font-weight="600" text-anchor="middle">Phone response, logs</text>
+<rect x="668" y="60" width="256" height="456" rx="14" fill="#fff" stroke="#e4dde9" stroke-width="1.5" filter="url(#sh)"/>
+<circle cx="702" cy="98" r="16" fill="url(#vgrad)"/><text x="702" y="104" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">3</text>
+<text x="728" y="104" font-size="17.5" fill="#57068c" font-weight="700" text-anchor="start">Evaluate</text>
+<rect x="690" y="132" width="212" height="72" rx="10" fill="#f6f1fa" stroke="#e4dde9" stroke-width="1.5"/>
+<text x="796" y="165" font-size="14.5" fill="#1d1626" font-weight="600" text-anchor="middle">Rule-based checks</text>
+<text x="796" y="183" font-size="12.5" fill="#6d6578" font-weight="400" text-anchor="middle">against expected behavior</text>
+<rect x="690" y="216" width="212" height="72" rx="10" fill="#f6f1fa" stroke="#e4dde9" stroke-width="1.5"/>
+<text x="796" y="249" font-size="14.5" fill="#1d1626" font-weight="600" text-anchor="middle">LLM analysis</text>
+<text x="796" y="267" font-size="12.5" fill="#6d6578" font-weight="400" text-anchor="middle">of the test results</text>
+<line x1="796" y1="296" x2="796" y2="330" stroke="#57068c" stroke-width="2.4" marker-end="url(#av)"/>
+<path d="M752 336h66l22 22v100h-88z" fill="#fff" stroke="#57068c" stroke-width="2.4" stroke-linejoin="round"/><path d="M818 336v22h22" fill="none" stroke="#57068c" stroke-width="2"/><path d="M766 378l5 6l10 -11" fill="none" stroke="#00979a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="790" y="375" width="38" height="5" rx="2.5" fill="#d9d2e0"/><path d="M766 403l5 6l10 -11" fill="none" stroke="#00979a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="790" y="400" width="38" height="5" rx="2.5" fill="#d9d2e0"/><path d="M767 423l11 11m0 -11l-11 11" fill="none" stroke="#d6336c" stroke-width="3" stroke-linecap="round"/><rect x="790" y="425" width="38" height="5" rx="2.5" fill="#d9d2e0"/><text x="796" y="492" font-size="14" fill="#1d1626" font-weight="600" text-anchor="middle">Security report</text>
+<line x1="296" y1="288" x2="348" y2="288" stroke="#57068c" stroke-width="2.4" marker-end="url(#av)"/>
+<line x1="612" y1="288" x2="664" y2="288" stroke="#57068c" stroke-width="2.4" marker-end="url(#av)"/>
+</svg>
