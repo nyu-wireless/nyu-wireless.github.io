@@ -12,6 +12,10 @@ students:
   - name: "Ozan Aygün"
 keywords: ["Constrained reinforcement learning", "Network control", "Routing and scheduling", "Latency-sensitive applications", "Multi-agent RL"]
 publications:
+  - title: "Constrained Deep Reinforcement Learning for Cost-Efficient and Timely Packet Delivery"
+    authors: "O. Aygün, V. N. Vitale, A. M. Tulino, H. Feng, E. Erkip, J. Llorca"
+    venue: "IEEE Transactions on Machine Learning in Communications and Networking, vol. 4, 2026"
+    url: "https://ieeexplore.ieee.org/document/11733697"
   - title: "A Constrained RL Approach for Cost-Efficient Delivery of Latency-Sensitive Applications"
     authors: "O. Aygün, V. N. Vitale, A. M. Tulino, H. Feng, E. Erkip, J. Llorca"
     venue: "Asilomar Conference on Signals, Systems, and Computers, 2025"

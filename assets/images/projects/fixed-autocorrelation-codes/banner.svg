@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 576" role="img" aria-labelledby="t d" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+  <title id="t">Geometry of fixed-autocorrelation codes</title>
+  <desc id="d">Left: conjugate-reciprocal zeros on circles of radius R and 1 over R around the unit circle. Right: four different length-3 Huffman codewords, all with the same aperiodic autocorrelation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf9fc"/><stop offset="1" stop-color="#f1eaf6"/>
+    </linearGradient>
+    <linearGradient id="vgrad" x1="0" x2="1">
+      <stop offset="0" stop-color="#57068c"/><stop offset="1" stop-color="#8900e1"/>
+    </linearGradient>
+    <marker id="av" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#57068c"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6d6578"/></marker>
+    <marker id="at" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#00979a"/></marker>
+    <marker id="ap" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d6336c"/></marker>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#1e0a32" flood-opacity=".10"/></filter>
+  </defs>
+  <rect width="960" height="576" fill="url(#bg)"/>
+<rect x="44" y="44" width="356" height="488" rx="14" fill="#fff" stroke="#e4dde9" stroke-width="1.5" filter="url(#sh)"/>
+<text x="222" y="84" font-size="16" fill="#1d1626" font-weight="600" text-anchor="middle">Zeros of the codeword polynomial</text>
+<line x1="37" y1="296" x2="407" y2="296" stroke="#d8d0e0" stroke-width="1.5"/>
+<line x1="222" y1="111" x2="222" y2="481" stroke="#d8d0e0" stroke-width="1.5"/>
+<circle cx="222" cy="296" r="70" fill="none" stroke="#6d6578" stroke-width="2" stroke-dasharray="7 6"/>
+<circle cx="222" cy="296" r="175.0" fill="none" stroke="#57068c" stroke-width="2.4"/>
+<circle cx="222" cy="296" r="28.0" fill="none" stroke="#57068c" stroke-width="2.4"/>
+<circle cx="47.0" cy="296" r="9" fill="#57068c" stroke="#fff" stroke-width="2"/>
+<circle cx="194.0" cy="296" r="9" fill="#00979a" stroke="#fff" stroke-width="2"/>
+<circle cx="397.0" cy="296" r="9" fill="#57068c" stroke="#fff" stroke-width="2"/>
+<circle cx="250.0" cy="296" r="9" fill="#00979a" stroke="#fff" stroke-width="2"/>
+<text x="264" y="218" font-size="14" fill="#6d6578" font-weight="500" text-anchor="middle">|z| = 1</text>
+<text x="222" y="516" font-size="13.5" fill="#6d6578" font-weight="400" text-anchor="middle">Each bit picks R or 1/R for one pair of zeros</text>
+<rect x="432" y="66" width="108" height="152" rx="12" fill="#fff" stroke="#e4dde9" stroke-width="1.5" filter="url(#sh)"/>
+<text x="450" y="92" font-size="15" fill="#57068c" font-weight="700" text-anchor="start">x₁</text>
+<line x1="444" y1="150" x2="528" y2="150" stroke="#d8d0e0" stroke-width="1.5"/>
+<line x1="458" y1="150" x2="458" y2="142.4" stroke="#57068c" stroke-width="3.5"/>
+<circle cx="458" cy="142.4" r="6" fill="#57068c"/>
+<line x1="486" y1="150" x2="486" y2="150.0" stroke="#57068c" stroke-width="3.5"/>
+<circle cx="486" cy="150.0" r="6" fill="#57068c"/>
+<line x1="514" y1="150" x2="514" y2="197.4" stroke="#57068c" stroke-width="3.5"/>
+<circle cx="514" cy="197.4" r="6" fill="#57068c"/>
+<rect x="552" y="66" width="108" height="152" rx="12" fill="#fff" stroke="#e4dde9" stroke-width="1.5" filter="url(#sh)"/>
+<text x="570" y="92" font-size="15" fill="#d6336c" font-weight="700" text-anchor="start">x₂</text>
+<line x1="564" y1="150" x2="648" y2="150" stroke="#d8d0e0" stroke-width="1.5"/>
+<line x1="578" y1="150" x2="578" y2="102.6" stroke="#d6336c" stroke-width="3.5"/>
+<circle cx="578" cy="102.6" r="6" fill="#d6336c"/>
+<line x1="606" y1="150" x2="606" y2="150.0" stroke="#d6336c" stroke-width="3.5"/>
+<circle cx="606" cy="150.0" r="6" fill="#d6336c"/>
+<line x1="634" y1="150" x2="634" y2="157.6" stroke="#d6336c" stroke-width="3.5"/>
+<circle cx="634" cy="157.6" r="6" fill="#d6336c"/>
+<rect x="432" y="236" width="108" height="152" rx="12" fill="#fff" stroke="#e4dde9" stroke-width="1.5" filter="url(#sh)"/>
+<text x="450" y="262" font-size="15" fill="#00979a" font-weight="700" text-anchor="start">x₃</text>
+<line x1="444" y1="320" x2="528" y2="320" stroke="#d8d0e0" stroke-width="1.5"/>
+<line x1="458" y1="320" x2="458" y2="301.0" stroke="#00979a" stroke-width="3.5"/>
+<circle cx="458" cy="301.0" r="6" fill="#00979a"/>
+<line x1="486" y1="320" x2="486" y2="359.8" stroke="#00979a" stroke-width="3.5"/>
+<circle cx="486" cy="359.8" r="6" fill="#00979a"/>
+<line x1="514" y1="320" x2="514" y2="339.0" stroke="#00979a" stroke-width="3.5"/>
+<circle cx="514" cy="339.0" r="6" fill="#00979a"/>
+<rect x="552" y="236" width="108" height="152" rx="12" fill="#fff" stroke="#e4dde9" stroke-width="1.5" filter="url(#sh)"/>
+<text x="570" y="262" font-size="15" fill="#e07b1a" font-weight="700" text-anchor="start">x₄</text>
+<line x1="564" y1="320" x2="648" y2="320" stroke="#d8d0e0" stroke-width="1.5"/>
+<line x1="578" y1="320" x2="578" y2="301.0" stroke="#e07b1a" stroke-width="3.5"/>
+<circle cx="578" cy="301.0" r="6" fill="#e07b1a"/>
+<line x1="606" y1="320" x2="606" y2="280.2" stroke="#e07b1a" stroke-width="3.5"/>
+<circle cx="606" cy="280.2" r="6" fill="#e07b1a"/>
+<line x1="634" y1="320" x2="634" y2="339.0" stroke="#e07b1a" stroke-width="3.5"/>
+<circle cx="634" cy="339.0" r="6" fill="#e07b1a"/>
+<text x="546" y="420" font-size="14.5" fill="#1d1626" font-weight="600" text-anchor="middle">Four different codewords…</text>
+<line x1="668" y1="226" x2="716" y2="226" stroke="#57068c" stroke-width="2.6" marker-end="url(#av)"/>
+<rect x="720" y="126" width="196" height="200" rx="14" fill="#fff" stroke="#57068c" stroke-width="1.5" filter="url(#sh)"/>
+<text x="818" y="160" font-size="14.5" fill="#1d1626" font-weight="600" text-anchor="middle">…one autocorrelation</text>
+<line x1="744" y1="258" x2="892" y2="258" stroke="#d8d0e0" stroke-width="1.5"/>
+<line x1="752" y1="258" x2="752" y2="268.9" stroke="#57068c" stroke-width="3.5"/>
+<circle cx="752" cy="268.9" r="6" fill="#57068c"/>
+<line x1="785" y1="258" x2="785" y2="258.0" stroke="#57068c" stroke-width="3.5"/>
+<circle cx="785" cy="258.0" r="6" fill="#57068c"/>
+<line x1="818" y1="258" x2="818" y2="188.0" stroke="#57068c" stroke-width="3.5"/>
+<circle cx="818" cy="188.0" r="6" fill="#57068c"/>
+<line x1="851" y1="258" x2="851" y2="258.0" stroke="#57068c" stroke-width="3.5"/>
+<circle cx="851" cy="258.0" r="6" fill="#57068c"/>
+<line x1="884" y1="258" x2="884" y2="268.9" stroke="#57068c" stroke-width="3.5"/>
+<circle cx="884" cy="268.9" r="6" fill="#57068c"/>
+<text x="818" y="306" font-size="12.5" fill="#6d6578" font-weight="400" text-anchor="middle">lag</text>
+<rect x="432" y="444" width="484" height="88" rx="14" fill="#fff" stroke="#e4dde9" stroke-width="1.5" filter="url(#sh)"/>
+<text x="674" y="480" font-size="15.5" fill="#1d1626" font-weight="600" text-anchor="middle">Noncoherent short packets</text>
+<text x="674" y="506" font-size="13" fill="#6d6578" font-weight="400" text-anchor="middle">The receiver works without instantaneous channel state information</text>
+</svg>

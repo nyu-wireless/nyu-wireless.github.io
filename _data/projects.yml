@@ -250,3 +250,31 @@
   url: "/projects/learned-compress-and-forward/"
   image: "/assets/images/projects/learned-compress-and-forward/banner.svg"
   areas: [wireless, ai-ml]
+
+- title: "Theoretical Approaches to Compression under Modern Constraints"
+  pis: ["Elza Erkip"]
+  summary: "Information-theoretic bounds for single-shot, distributed and multi-task compression, and sources with memory."
+  url: "/projects/compression-modern-constraints/"
+  image: "/assets/images/projects/compression-modern-constraints/banner.svg"
+  areas: [wireless]
+
+- title: "Learned Dirty Paper Coding"
+  pis: ["Elza Erkip"]
+  summary: "Neural encoders and decoders that learn to pre-cancel known interference, with no channel model."
+  url: "/projects/learned-dirty-paper-coding/"
+  image: "/assets/images/projects/learned-dirty-paper-coding/banner.svg"
+  areas: [wireless, ai-ml]
+
+- title: "Covert Communication in the Presence of Legitimate Transmission"
+  pis: ["Elza Erkip"]
+  summary: "When a hidden transmitter can, and cannot, reach a rogue receiver undetected alongside a legitimate link."
+  url: "/projects/covert-communication/"
+  image: "/assets/images/projects/covert-communication/banner.svg"
+  areas: [wireless, networking]
+
+- title: "Geometry of Fixed-Autocorrelation Codes"
+  pis: ["Elza Erkip"]
+  summary: "Distance properties and code design for noncoherent short packets that share one autocorrelation."
+  url: "/projects/fixed-autocorrelation-codes/"
+  image: "/assets/images/projects/fixed-autocorrelation-codes/banner.svg"
+  areas: [wireless]
