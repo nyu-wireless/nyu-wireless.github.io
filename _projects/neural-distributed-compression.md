@@ -16,6 +16,10 @@ students:
   - name: "Ezgi Özyılkan"
 keywords: ["Distributed source coding", "Wyner–Ziv coding", "Learned compression", "Binning", "Interpretable machine learning"]
 publications:
+  - title: "SoftBinary Coding: A New Information-Theoretic Paradigm for Neural Compression via Fast Channel Simulation"
+    authors: "E. Özyılkan, S. M. Sriramu, E. Erkip, A. B. Wagner, J. Ballé"
+    venue: "International Conference on Machine Learning (ICML), 2026"
+    url: "https://openreview.net/forum?id=RmlisaChid"
   - title: "Breaking Smoothness: The Struggles of Neural Compressors with Discontinuous Mappings"
     authors: "E. Özyılkan, J. Ballé, S. Bhadane, A. B. Wagner, E. Erkip"
     venue: "NeurIPS Workshop on Machine Learning and Compression, 2024"
@@ -53,5 +57,3 @@ publications:
 Camera arrays, sensor networks and edge devices often compress data that is correlated with data held elsewhere. In the **Wyner–Ziv** setting, the decoder has correlated side information and the encoder does not. Information theory shows that the encoder can still benefit, by **binning**: it assigns the same index to source values that are far apart, and the decoder uses its side information to tell them apart. Practical compressors rarely exploit this, and standard neural compressors do not learn it.
 
 This project develops learned distributed compressors that are both practical and interpretable. Trained only from data, our neural Wyner–Ziv compressors **recover binning** and approach theoretical rate–distortion limits. They outperform neural transform coding that is given the same side information. Related work covers robust compression when the side information may be missing (the Heegard–Berger problem), image compression with side information, and joint source-channel coding. The same ideas power [learned compress-and-forward relaying](/projects/learned-compress-and-forward/).
-
-The Wyner–Ziv work is a collaboration with Johannes Ballé (Google Research) and was supported in part by the Google Research Collabs Program.
