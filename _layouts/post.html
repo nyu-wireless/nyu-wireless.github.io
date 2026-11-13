@@ -1,0 +1,51 @@
+---
+layout: default
+---
+{% comment %}
+  A news post (files in _posts/). Front matter: title, summary (one sentence,
+  shown under the title and on the news cards), optional image and image_alt
+  (shown at the top of the post and as the card thumbnail), optional
+  image_caption, and optional videos (a list of {youtube, title}) shown at the
+  end of the post. Without an image, the first video's thumbnail is used on
+  the news cards. Set image_fit: contain for a logo, so it isn't cropped, or
+  image_position (for example "center 20%") to choose which part of a photo
+  shows on the cards.
+  Set external_url to make the news cards link straight to a story elsewhere
+  (for example, NYU Tandon news); the post then needs no body text.
+{% endcomment %}
+<section class="page-hero">
+  <div class="container">
+    <a class="eyebrow eyebrow-link" href="{{ '/news/' | relative_url }}">News &middot; {{ page.date | date: "%B %-d, %Y" }}</a>
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p>{{ page.summary }}</p>{% endif %}
+  </div>
+</section>
+
+<section class="page-body">
+  <article class="container prose prose-narrow news-post">
+    {% if page.image %}
+    <figure class="figure-card news-post-image{% if page.image_fit == 'contain' %} news-post-logo{% endif %}">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}">
+      {% if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}
+    </figure>
+    {% endif %}
+{{ content }}
+    {% if page.external_url %}
+    <p><a class="btn btn-primary" href="{{ page.external_url }}">Read the full story &#8599;</a></p>
+    {% endif %}
+    {% if page.videos %}
+    <div class="demo-grid news-videos">
+      {% for v in page.videos %}
+      <article class="demo-card">
+        <button class="yt-lite" type="button" data-id="{{ v.youtube }}" aria-label="Play video: {{ v.title | escape }}">
+          <img src="https://i.ytimg.com/vi/{{ v.youtube }}/hqdefault.jpg" alt="" loading="lazy">
+          <span class="yt-play" aria-hidden="true"><svg viewBox="0 0 68 48"><path d="M66.5 7.7a8.6 8.6 0 0 0-6-6C55.2 0 34 0 34 0S12.8 0 7.5 1.6a8.6 8.6 0 0 0-6 6C0 13 0 24 0 24s0 11 1.5 16.3a8.6 8.6 0 0 0 6 6C12.8 48 34 48 34 48s21.2 0 26.5-1.6a8.6 8.6 0 0 0 6-6C68 35 68 24 68 24s0-11-1.5-16.3z"/><path d="M45 24 27 14v20" fill="#fff"/></svg></span>
+        </button>
+        <div class="demo-body"><h3>{{ v.title }}</h3></div>
+      </article>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <p class="news-back"><a href="{{ '/news/' | relative_url }}">&larr; All news</a></p>
+  </article>
+</section>

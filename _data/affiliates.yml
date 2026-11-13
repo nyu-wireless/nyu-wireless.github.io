@@ -31,3 +31,7 @@
 - name: "UMC"
   logo: /assets/images/affiliates/umc.png
   url: https://www.umc.com/
+- name: "VodafoneThree"
+  logo: /assets/images/affiliates/vodafonethree.svg
+  url: https://www.vodafonethree.com/
+  logo_height: 54  # optional: shrink a heavy logo so it doesn't dominate (pixels, default 72)

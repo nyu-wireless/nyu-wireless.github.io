@@ -585,6 +585,11 @@ h3 { font-size: 19px; line-height: 1.3; margin: 0 0 8px; color: var(--ink); }
 }
 @media (max-width: 960px) { .affiliate-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 560px) { .affiliate-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 20px; } }
+/* Affiliate logos wrap into centered rows, so a short last row stays balanced */
+.affiliate-grid:not(.funding-grid) { display: flex; flex-wrap: wrap; justify-content: center; }
+.affiliate-grid:not(.funding-grid) li { flex: 0 0 calc((100% - 5 * 28px) / 6); }
+@media (max-width: 960px) { .affiliate-grid:not(.funding-grid) li { flex-basis: calc((100% - 2 * 28px) / 3); } }
+@media (max-width: 560px) { .affiliate-grid:not(.funding-grid) li { flex-basis: calc((100% - 20px) / 2); } }
 .affiliate-grid a { display: grid; place-items: center; height: 72px; transition: transform .15s; }
 .affiliate-grid a:hover { transform: translateY(-2px); }
 .affiliate-grid img { max-height: 72px; max-width: 100%; width: auto; height: auto; object-fit: contain; }
@@ -748,3 +753,21 @@ h3 { font-size: 19px; line-height: 1.3; margin: 0 0 8px; color: var(--ink); }
 .gallery figure { margin: 0; }
 .gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; box-shadow: var(--shadow); }
 .gallery figcaption { margin-top: 8px; font-size: 14px; color: var(--muted); }
+
+/* ---------- News ---------- */
+.news-card .news-date { font-size: 12.5px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--violet-ultra); margin-bottom: 8px; }
+.prose .news-post-image { margin: 0 0 36px; }
+.prose blockquote {
+  margin: 28px 0; padding: 18px 24px; border-left: 4px solid var(--violet); background: var(--violet-light); border-radius: 0 10px 10px 0;
+  font-family: var(--font-display); font-size: 18px; line-height: 1.55;
+}
+.prose blockquote p { color: var(--violet-deep); margin: 0 0 10px; }
+.prose blockquote p:last-child { margin: 0; font-family: var(--font); font-size: 14.5px; font-weight: 600; color: var(--violet); }
+.news-videos { margin-top: 8px; }
+.prose .news-back { margin-top: 40px; font-weight: 600; }
+.home-news-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
+.home-news-head h2 { margin: 0; }
+.home-news-head a { font-weight: 700; text-decoration: none; }
+.home-news-head a:hover { text-decoration: underline; }
+.news-thumb-logo { padding: 40px 64px; }
+.prose .news-post-logo img { max-width: 320px; margin: 0 auto; }
