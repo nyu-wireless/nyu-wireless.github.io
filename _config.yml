@@ -48,6 +48,8 @@ include:
 exclude:
   - README.md
   - adding_projects.md
+  - CLAUDE.md
+  - guide/
   - Gemfile
   - Gemfile.lock
   - vendor/

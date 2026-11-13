@@ -7,6 +7,10 @@ WIRELESS faculty group sites.
 
 **Faculty adding projects:** see [adding_projects.md](adding_projects.md).
 
+**Managing the site with Claude (no coding needed):** see the
+[guide](guide/index.md). Instructions for AI agents are in
+[CLAUDE.md](CLAUDE.md).
+
 ## Local preview
 
 ```
