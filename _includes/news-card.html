@@ -1,0 +1,17 @@
+{% comment %} One news card. Pass post=<a post>. Posts with external_url link straight to that page. {% endcomment %}
+{% assign p = include.post %}
+<a class="project-card news-card" href="{% if p.external_url %}{{ p.external_url }}{% else %}{{ p.url | relative_url }}{% endif %}">
+  {% if p.image %}
+  <img class="project-thumb{% if p.image_fit == 'contain' %} project-thumb-contain news-thumb-logo{% endif %}" src="{{ p.image | relative_url }}" alt="{{ p.image_alt | escape }}"{% if p.image_position %} style="object-position: {{ p.image_position }}"{% endif %} loading="lazy">
+  {% elsif p.videos %}
+  <img class="project-thumb" src="https://i.ytimg.com/vi/{{ p.videos[0].youtube }}/hqdefault.jpg" alt="" loading="lazy">
+  {% else %}
+  <div class="project-thumb project-thumb-blank" aria-hidden="true"></div>
+  {% endif %}
+  <div class="project-body">
+    <time class="news-date" datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%B %-d, %Y" }}</time>
+    <h3>{{ p.title }}</h3>
+    {% if p.summary %}<p>{{ p.summary }}</p>{% endif %}
+    <span class="more">{% if p.external_url %}Read the story &#8599;{% else %}Read more &rarr;{% endif %}</span>
+  </div>
+</a>

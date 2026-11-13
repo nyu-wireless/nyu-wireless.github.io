@@ -30,7 +30,7 @@ permalink: /
   <div class="affiliate-card">
     <ul class="affiliate-grid">
       {% for a in site.data.affiliates %}
-      <li><a href="{{ a.url }}" title="{{ a.name }}"><img src="{{ a.logo | relative_url }}" alt="{{ a.name }}"></a></li>
+      <li><a href="{{ a.url }}" title="{{ a.name }}"><img src="{{ a.logo | relative_url }}" alt="{{ a.name }}"{% if a.logo_height %} style="max-height: {{ a.logo_height }}px"{% endif %}></a></li>
       {% endfor %}
     </ul>
     <p class="affiliate-note">Our affiliates support the center's infrastructure, student internships and fellowships, and work directly with our faculty and students on research.</p>
@@ -45,3 +45,20 @@ permalink: /
     </ul>
   </div>
 </div>
+
+{% if site.posts.size > 0 %}
+<!-- Latest news -->
+<section class="section-alt home-news">
+  <div class="container">
+    <div class="home-news-head">
+      <h2>Latest news</h2>
+      <a href="{{ '/news/' | relative_url }}">All news &rarr;</a>
+    </div>
+    <div class="project-grid">
+      {% for post in site.posts limit:3 %}
+      {% include news-card.html post=post %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
