@@ -17,7 +17,14 @@
         <h4>Explore</h4>
         <ul class="footer-links">
           {% for item in site.data.navigation.main %}
+          {% if item.children %}
+          {% for child in item.children %}
+          {% assign first = child.url | slice: 0 %}
+          <li><a href="{% if first == '/' %}{{ child.url | relative_url }}{% else %}{{ child.url }}{% endif %}">{{ child.title | escape }}</a></li>
+          {% endfor %}
+          {% else %}
           <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endif %}
           {% endfor %}
         </ul>
       </div>

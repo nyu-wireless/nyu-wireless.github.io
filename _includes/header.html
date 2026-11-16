@@ -12,6 +12,18 @@
     </button>
     <ul class="nav-links" id="nav-links">
       {% for item in site.data.navigation.main %}
+        {% if item.children %}
+      <li class="has-sub">
+        <button class="nav-parent" type="button" aria-expanded="false">{{ item.title | escape }}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <ul class="nav-sub">
+          {% for child in item.children %}
+          {% assign first = child.url | slice: 0 %}
+          <li><a href="{% if first == '/' %}{{ child.url | relative_url }}{% else %}{{ child.url }}{% endif %}">{{ child.title | escape }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+          {% continue %}
+        {% endif %}
         {% assign current = false %}
         {% if item.url == '/' %}
           {% if page.url == '/' or page.url == '/index.html' %}{% assign current = true %}{% endif %}

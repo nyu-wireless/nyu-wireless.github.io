@@ -1,4 +1,6 @@
 # Top navigation bar
+# An item can have a "url", or a list of "children" (shown as a dropdown).
+# Each child has a "title" and a "url". Links outside the site use the full https:// address.
 main:
   - title: "Home"
     url: /
@@ -8,5 +10,13 @@ main:
     url: /people/
   - title: "News"
     url: /news/
+  - title: "Publications & Software"
+    children:
+      - title: "Publications"
+        url: https://nyupublication-frosty-lake-3743.fly.dev/library
+      - title: "NYUSIM"
+        url: https://wireless.engineering.nyu.edu/nyusim/
+      - title: "Wireless Nerd"
+        url: https://wirelessnerd.org/
   - title: "Events"
     url: /events/
