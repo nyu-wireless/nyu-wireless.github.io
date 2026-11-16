@@ -64,6 +64,22 @@ a:hover { color: var(--violet-ultra); }
 .nav-links a:hover { background: var(--violet-light); color: var(--violet); }
 .nav-links a[aria-current="page"] { color: var(--violet); background: var(--violet-light); }
 
+/* Dropdown menus (items with "children" in the navigation list) */
+.has-sub { position: relative; }
+.nav-parent {
+  display: flex; align-items: center; gap: 4px; padding: 8px 14px; border-radius: 8px;
+  background: none; border: 0; cursor: pointer; font: inherit;
+  color: var(--ink-soft); font-weight: 600; font-size: 15px;
+}
+.nav-parent svg { width: 14px; height: 14px; }
+.nav-parent:hover, .has-sub.open .nav-parent { background: var(--violet-light); color: var(--violet); }
+.nav-sub {
+  display: none; position: absolute; top: 100%; left: 0; min-width: 200px;
+  list-style: none; margin: 0; padding: 6px; background: #fff;
+  border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow);
+}
+.has-sub:hover .nav-sub, .has-sub:focus-within .nav-sub, .has-sub.open .nav-sub { display: block; }
+
 .nav-toggle {
   display: none; background: none; border: 1px solid var(--line); border-radius: 8px;
   width: 42px; height: 42px; cursor: pointer; color: var(--violet);
@@ -78,6 +94,8 @@ a:hover { color: var(--violet-ultra); }
     border-bottom: 1px solid var(--line); box-shadow: var(--shadow);
   }
   .nav-links.open { display: flex; }
+  .nav-parent { width: 100%; }
+  .nav-sub { position: static; border: 0; box-shadow: none; padding: 0 0 0 14px; min-width: 0; }
 }
 @media (max-width: 480px) {
   .brand-sub { display: none; }

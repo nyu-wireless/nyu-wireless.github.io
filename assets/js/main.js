@@ -53,3 +53,11 @@ document.querySelectorAll('.yt-lite').forEach(function (btn) {
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
 })();
+
+// Dropdown menus: open/close on click or tap
+document.querySelectorAll('.nav-parent').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var open = btn.parentElement.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+});
