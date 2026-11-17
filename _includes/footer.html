@@ -10,8 +10,9 @@
         <p><a href="https://engineering.nyu.edu/">NYU Tandon</a></p>
       </div>
       <div>
-        <h4>Visit</h4>
+        <h4>Contact</h4>
         <p>{{ site.contact.address }}</p>
+        {% if site.contact.email %}<p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>{% endif %}
       </div>
       <div>
         <h4>Explore</h4>
