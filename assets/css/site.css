@@ -52,13 +52,13 @@ a:hover { color: var(--violet-ultra); }
   background: var(--violet); display: grid; place-items: center;
 }
 .brand-mark svg { width: 24px; height: 24px; }
-.brand-text { display: flex; flex-direction: column; line-height: 1.15; }
+.brand-text { display: flex; flex-direction: column; line-height: 1.15; white-space: nowrap; }
 .brand-name { font-weight: 800; letter-spacing: .01em; font-size: 17px; color: var(--violet); }
 .brand-sub { font-size: 11px; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; font-weight: 600; }
 
-.nav-links { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
+.nav-links { display: flex; gap: 2px; list-style: none; margin: 0; padding: 0; }
 .nav-links a {
-  display: block; padding: 8px 14px; border-radius: 8px;
+  display: block; padding: 8px 10px; border-radius: 8px; white-space: nowrap;
   text-decoration: none; color: var(--ink-soft); font-weight: 600; font-size: 15px;
 }
 .nav-links a:hover { background: var(--violet-light); color: var(--violet); }
@@ -67,7 +67,7 @@ a:hover { color: var(--violet-ultra); }
 /* Dropdown menus (items with "children" in the navigation list) */
 .has-sub { position: relative; }
 .nav-parent {
-  display: flex; align-items: center; gap: 4px; padding: 8px 14px; border-radius: 8px;
+  display: flex; align-items: center; gap: 4px; padding: 8px 10px; border-radius: 8px; white-space: nowrap;
   background: none; border: 0; cursor: pointer; font: inherit;
   color: var(--ink-soft); font-weight: 600; font-size: 15px;
 }
@@ -86,7 +86,8 @@ a:hover { color: var(--violet-ultra); }
 }
 .nav-toggle svg { width: 22px; height: 22px; margin: auto; }
 
-@media (max-width: 860px) {
+/* Switch to the ☰ menu when the full menu no longer fits on one line */
+@media (max-width: 1140px) {
   .nav-toggle { display: grid; place-items: center; }
   .nav-links {
     display: none; position: absolute; left: 0; right: 0; top: 68px;

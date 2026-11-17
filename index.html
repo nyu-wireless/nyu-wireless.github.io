@@ -13,6 +13,7 @@ permalink: /
     <div class="btn-row">
       <a class="btn btn-primary" href="{{ '/research/' | relative_url }}">Our research</a>
       <a class="btn btn-ghost" href="{{ '/people/' | relative_url }}">People</a>
+      {% if site.contact.email %}<a class="btn btn-ghost" href="mailto:{{ site.contact.email }}">Get in touch</a>{% endif %}
     </div>
     </div>
     <figure class="hero-photo">

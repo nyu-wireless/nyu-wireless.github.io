@@ -27,6 +27,7 @@ branding:
 
 contact:
   address: "370 Jay St, Brooklyn, NY 11201"
+  email: "info@nyuwireless.com"  # shown in the footer and the home page "Get in touch" line
 
 # Build settings ----------------------------------------------------------
 markdown: kramdown
